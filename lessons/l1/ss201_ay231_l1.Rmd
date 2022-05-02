@@ -1,0 +1,72 @@
+---
+title: "SS201: Principles of Economics"
+author: "Carson Homme"
+institute: "United States Military Academy"
+date: "November 3, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, "usma.css", "usma-fonts.css"]
+---
+# Overview
+- Dissertation Plan
+  - Third Year Paper
+  - Updated Timeline
+    - 02DEC: Third Year Paper
+    - 28JAN: Oral Candidacy
+    - 01MAR: Dissertation Draft Complete
+    - 01APR: Defend Dissertation
+  
+- Surprisingly Rational: Drug Crime Over a Monthly Income Cycle
+
+- A Crime of Passion, Resources, and Time: Violent Crime within a Monthly Income Cycle
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Crime Trends
+
+
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Testing Data
+
+.black[.center[Drug Crime NOT Caught by Testing]]
+
+]
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Raw Testing Time Trends
+
+.black[.center[Counts of Full Unit Tests]]
+
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Raw Testing Time Trends
+.pull-left[
+.black[.center[Counts of Random Tests]]]
+
+.pull-right[
+.black[.center[Counts of Drug Crimes]]
+]
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Testing Data
+.pull-left[
+]
+
+.pull-right[
+]
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Summary Stats
+.pull-left[
+]
+
+.pull-right[
+]
+---
+# Surprisingly Rational: Soldier Drug Crime
+### Average Consumer
+.pull-left[
+]
+
+.pull-right[
+]
