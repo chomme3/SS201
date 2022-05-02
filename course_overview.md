@@ -10,8 +10,9 @@ SS201: Principles of Economics
 in the original HTML format.*
 
 1. Introduction 
+2. 
 ## Details
 
-##FAQ
+## FAQ
 
-##Acknowledgments
+## Acknowledgments
