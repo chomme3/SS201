@@ -1,5 +1,4 @@
-# SS201
-SS201: Principles of Economics
+# SS201: Principles of Economics
 
 [`Lessons`](#lessons) | [`Details`](#details) |
 [`FAQ`](#faq) | [`Acknowledgments`](#acknowledgements)
