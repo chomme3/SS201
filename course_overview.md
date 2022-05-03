@@ -6,11 +6,11 @@ SS201: Principles of Economics
 
 ## Lessons
 
-*Note: While I have provided PDF versions of the lectures, they are best viewed 
-in the original HTML format.*
-
-1. Introduction 
+1. Economic Principles \[[**.html**]](https://raw.githack.com/uo-ec607/lectures/master/01-intro/01-Intro.html) | [**.Rmd**](https://raw.githack.com/uo-ec607/lectures/master/01-intro/01-Intro.html)
 2. 
+
+
+
 ## Details
 
 ## FAQ

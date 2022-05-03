@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson 1: Economic Principles"
+subtitle: "Lesson 3: Consumer Choice Theory"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:
@@ -8,17 +8,10 @@ output:
     css: [default, "usma.css", "usma-fonts.css"]
 ---
 # Overview
-- Dissertation Plan
-  - Third Year Paper
-  - Updated Timeline
-    - 02DEC: Third Year Paper
-    - 28JAN: Oral Candidacy
-    - 01MAR: Dissertation Draft Complete
-    - 01APR: Defend Dissertation
-  
-- Surprisingly Rational: Drug Crime Over a Monthly Income Cycle
 
-- A Crime of Passion, Resources, and Time: Violent Crime within a Monthly Income Cycle
+- Reading   
+
+
 ---
 # Surprisingly Rational: Soldier Drug Crime
 ### Crime Trends
