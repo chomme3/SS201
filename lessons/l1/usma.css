@@ -7,7 +7,7 @@ Updated: 5/03/2022
 /* Package defaults that we slightly tweak */
 
 .remark-slide-content {
-  font-size: 15px;
+  font-size: 24px;
   padding: 1em 4em 1em 4em;
 }
 
@@ -97,7 +97,7 @@ table {
 }
 
 table thead th { border-bottom: none; }
-thead, tfoot, tr:nth-child(even) { background: none; }
+thead, tfoot, th, tr, td { background-color: #FFFFFF }
 
 /* leave this alone */
 @page { margin: 0; }
@@ -109,6 +109,30 @@ thead, tfoot, tr:nth-child(even) { background: none; }
     top: 0 !important;
     left: 0 !important;
   }
+}
+
+/* Progress Bar Instead of Slide Number */
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: black;
+}
+
+.title-slide .remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: white;
 }
 
 /*~~~~~~~~~~~~~~*/
@@ -128,6 +152,10 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 .tiny {
   font-size: 10%;
+}
+
+.small {
+  font-size: 70%;
 }
 
 .bigger {
@@ -233,7 +261,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* Make bold syntax compile to RU-red */
 strong {
-    color: #0300cc56;
+    color: #000000;
 }
 
 .RUred {
@@ -268,11 +296,17 @@ strong {
 
 /* Color adjustments to headers */
 h1 {
-  color: #000000;
+  color: #000000
+}
+
+h2 {
+  color: #000000
+  margin-top: -30px;
 }
 
 h3 {
   color: #515151;
+  margin-top: -30px;
 }
 
 /* Font size tags */

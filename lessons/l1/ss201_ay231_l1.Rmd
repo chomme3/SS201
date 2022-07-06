@@ -6,67 +6,309 @@ institute: "United States Military Academy"
 output:
   xaringan::moon_reader:
     css: [default, "usma.css", "usma-fonts.css"]
+    nature:
+      ratio: '4:3'
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
 ---
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(
+  cache = TRUE,
+  echo = FALSE,
+  warning = FALSE, 
+  message = FALSE,
+  fig.align = 'center') 
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = TRUE)
+bib <- ReadBib("references.bib", check = FALSE)
+
+print_bib_rmd <- function(bib, .opts = list(), start = 1, stop = NULL, decreasing = FALSE) {
+
+    bib <- sort(bib, decreasing = FALSE)
+
+    if (!length(bib)) {
+        return(bib)
+    }
+
+    if (identical(class(bib), "bibentry")) {
+        bib <- as.BibEntry(bib)
+    }
+
+    keys <- unlist(bib$key)
+    ind <- keys %in% names(.cites$indices)
+
+    if (!any(ind)) {
+        message("You haven't cited any references in this bibliography yet.")
+        return()
+    }
+
+    if (length(.opts$bib.style)) {
+      bibstyle <- .opts$bib.style
+    } else {
+      bibstyle <- .BibOptions$bib.style
+    }
+
+    if (length(.opts$cite.style)) {
+      citestyle <- .opts$cite.style
+    } else {
+      citestyle <- .BibOptions$cite.style
+    }
+
+    if (length(.opts$style)) {
+      style <- .opts$style
+    } else {
+      style <- .BibOptions$style
+    }
+
+    bib <- bib[[ind]] # gets citations to print
+
+    if (bibstyle == citestyle) {
+        if (bibstyle == "numeric") {
+            if (length(bib) == length(.cites$labs)) {
+                bib <- bib[[names(.cites$labs)]]
+                .opts$sorting <- "none"
+                bib$.index <- structure(.cites$labs, names = NULL)
+            }
+        } else { 
+          bib$.index <- .cites$labs[keys[ind]]
+        }
+    }
+
+    if (length(.opts)) {
+        old.opts <- BibOptions(.opts)
+        on.exit(BibOptions(old.opts))
+    }
+
+    if (style == "yaml") {
+        cat("\n---\nnocite:", sQuote(paste0(paste0("@", names(.cites$indices)), 
+            collapse = ", ")))
+        cat("\n...  \n\n")
+    }
+    if (is.null(stop)) {
+      stop <- length(bib)
+    } 
+    bib <- bib[start:stop]
+    print(bib)
+}
+
+environment(print_bib_rmd) <- asNamespace("RefManageR")
+
+```
+
+```{r libs, include=FALSE, cache=FALSE, message=FALSE}
+library(data.table)
+library(tidyverse)
+library(ggplot2)
+library(pdftools)
+library(huxtable)
+```
+
 # Overview
-- Dissertation Plan
-  - Third Year Paper
-  - Updated Timeline
-    - 02DEC: Third Year Paper
-    - 28JAN: Oral Candidacy
-    - 01MAR: Dissertation Draft Complete
-    - 01APR: Defend Dissertation
+- Intros
+
+- Course Admin
+  - What you can expect from me
+  - What I expect from you
+
+- **Why is the Army making me take this course?**
+  - Economic Leader Principles
   
-- Surprisingly Rational: Drug Crime Over a Monthly Income Cycle
 
-- A Crime of Passion, Resources, and Time: Violent Crime within a Monthly Income Cycle
+
+???
+
+Feel:   Excited to come back, comfortable
+Know:   Expectations, Framework for Decision Making and Human Behavior
+Do:     Admin Tasks, Reading for Next Time
+
+  
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Crime Trends
+# Introductions
+
+- Name
+
+- Hometown
+
+- Academic Major / Minor
+
+- Sport / Club
+
+- "Walk-Out" Song
+
+---
+# Course Admin
+- 1,000 Point Course
+
+- 
+
+- 
+
+---
+# Course Admin
+### Class Policies
+- No computers (typing), digital pens on tablets OK
+
+--
+
+- No bathroom breaks, leaving forfeits the lesson
+
+--
+
+- 
+
+---
+# Course Admin
+### What You Can Expect from Me
+
+- The Three "A's": Around, Available, and Accessible
+
+--
+
+- Proficiency and ability to communicate. I'm here to challenge the way you think / see the world
+
+--
+
+- Third Stanza of the Ranger Creed
+
+--
+
+.center[*"Never shall I fail my comrades. I will always keep myself mentally alert, physically strong, and morally straight and I will shoulder more than my share of the task, whatever it may be, one-hundred percent and then some."*]
+
+--
+
+- This may be the only economics course you take, many here can talk Army, but I'm the only one to talk econ, so I prioritize accordingly
+
+--
+
+.center[**Did I miss anything?**]
+
+---
+# Course Admin
+### What I Expect from You
+
+Three P's:
+
+--
+
+- **Proficient** in the basics (uniform, haircut, rolling sleeves, etc.)
+
+--
+
+- **Prepare** for lessons, tests, and assignments
+  - Come to class prepared, with any and all questions
+  
+  - I am going to teach above the textbook. 
+
+--
+
+- **Participate** in class
+.center[
+"There is no such thing as a stupid question, only poor timing."
+
+*Pat Robinson*, my 7th Grade Teacher]
+
+---
+class: inverse, center, middle
+
+# Why is the Army making me take this course?
+
+.pull-left[![](https://i.imgur.com/CeUMbHI.gif)]
+.pull-right[![](https://i.imgur.com/IP83fC1.gif)]
+---
+# Why economics?
+
+- Scarcity / Trade
+
+- Marginal Benefit = Marginal Cost
+
 
 
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Testing Data
+# What is economics?
 
-.black[.center[Drug Crime NOT Caught by Testing]]
-
-]
----
-# Surprisingly Rational: Soldier Drug Crime
-### Raw Testing Time Trends
-
-.black[.center[Counts of Full Unit Tests]]
 
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Raw Testing Time Trends
-.pull-left[
-.black[.center[Counts of Random Tests]]]
+# What is economics?
+### Why no computers in the classroom?
 
-.pull-right[
-.black[.center[Counts of Drug Crimes]]
-]
+--
+
+- Everyone cares about education. Economists call this "human capital"
+
+--
+
+- Common belief is more education leads to more income
+
+--
+
+- More efficient education produces more income
+
+--
+</br></br>
+
+
+
+.big[.center[Technology improves everything, right?]]
+
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Testing Data
-.pull-left[
-]
+# What is economics?
+### Why no computers in the classroom?
 
-.pull-right[
-]
+.black[.center[`r Citet(bib, "carter2017_eer")` test this...]]
+
+--
+
+Randomly assigned all cadets taking SS201 to three groups:
+  1. Unfettered Computer / Tablet Access
+  2. Computer / Tablet Access if "Face-Up"
+  3. No tech
+
+--
+</br></br>
+
+.center[**Does technology improve learning and retention?**]
+
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Summary Stats
-.pull-left[
-]
+# What is economics?
+### Why no computers in the classroom?
 
-.pull-right[
-]
+```{r stranger, out.width='80%'}
+knitr::include_graphics("img/no_comp.png")
+```
+
+--
+
+.small[
+- Values given in standard deviations. 
+
+- Comparison being made between classes that allowed computers versus those that did not.
+
+- Negative values imply that students in "computer allowed" classrooms did much worse than those that were in computer "not allowed" classrooms]
+
 ---
-# Surprisingly Rational: Soldier Drug Crime
-### Average Consumer
-.pull-left[
-]
+# Next time...
 
-.pull-right[
-]
+- Chapter 2 (Including Appendix) 
+- Chapter 3 
+
+---
+# References
+```{r refs, echo=FALSE, results="asis"}
+print_bib_rmd(bib, start = 1, stop = 5)
+```
+---
+# Audiovisual
+
+```{r refs, echo=FALSE, results="asis"}
+print_bib_rmd(bib, start = 1, stop = 5)
+```
