@@ -5,14 +5,14 @@ author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:
   xaringan::moon_reader:
-    css: [default, "usma.css", "usma-fonts.css"]
-    nature:
-      ratio: '4:3'
-      slideNumberFormat: |
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+      css: [default.css, "usma.css", "usma-fonts.css"]
+      nature:
+        ratio: '4:3'
+        slideNumberFormat: |
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+            </div>
           </div>
-        </div>
 ---
 ```{r setup, include=FALSE} 
 knitr::opts_chunk$set(
@@ -304,11 +304,9 @@ knitr::include_graphics("img/no_comp.png")
 ---
 # References
 ```{r refs, echo=FALSE, results="asis"}
-print_bib_rmd(bib, start = 1, stop = 5)
+PrintBibliography(bib)
 ```
+
 ---
 # Audiovisual
 
-```{r refs, echo=FALSE, results="asis"}
-print_bib_rmd(bib, start = 1, stop = 5)
-```

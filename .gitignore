@@ -20,8 +20,10 @@ desktop.ini
 .tmp.driveupload
 **/.tmp.driveupload
 
-**/raw_nopii
-**/data
+
+**/_cache??
+**/_files??
+
 .Rproj.user
 
 **/**/sample
