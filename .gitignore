@@ -21,8 +21,20 @@ desktop.ini
 **/.tmp.driveupload
 
 
-**/_cache??
-**/_files??
+**/ss201_ay231_l1_cache
+**/ss201_ay231_l1_files
+**/ss201_ay231_l2_cache
+**/ss201_ay231_l2_files
+**/ss201_ay231_l3_cache
+**/ss201_ay231_l3_files
+**/ss201_ay231_l4_cache
+**/ss201_ay231_l4_files
+**/ss201_ay231_l5_cache
+**/ss201_ay231_l5_files
+**/ss201_ay231_l6_cache
+**/ss201_ay231_l6_files
+**/ss201_ay231_l7_cache
+**/ss201_ay231_l7_files
 
 .Rproj.user
 
