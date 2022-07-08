@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson 2: Economic Methods, Models, and Gains from Exchange"
+subtitle: "Lesson ##: TEMPLATE"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
   fig.align = 'center') 
 ```
 
-```{r, load_refs, include=FALSE, cache=FALSE}
+```{r load_refs, include=FALSE, cache=FALSE}
 library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
@@ -113,20 +113,27 @@ library(pdftools)
 library(huxtable)
 ```
 
----
-# Course Admin
+# Agenda
+- Admin
 
----
-# Overview
+- Review
 
-
-
+- 
 
 ???
 
-Feel:   Excited to come back, comfortable
-Know:   Expectations, Framework for Decision Making and Human Behavior
-Do:     Admin Tasks, Reading for Next Time
+Feel:   
+Know:   
+Do:     
+
+---
+# Course Admin
+
+
+---
+# Review
+
+
 
 ---
 # Lesson Material
@@ -136,13 +143,10 @@ Do:     Admin Tasks, Reading for Next Time
 ---
 # Next time...
 
-- Chapter 2 (Including Appendix) 
-- Chapter 3 
-
 ---
 # References
 ```{r refs, echo=FALSE, results="asis"}
-(bib)
+PrintBibliography(bib)
 ```
 
 ---

@@ -1,0 +1,178 @@
+---
+title: "SS201: Principles of Economics"
+subtitle: "Lesson 15: Perfect Competition"
+author: "MAJ Carson Homme"
+institute: "United States Military Academy"
+output:
+  xaringan::moon_reader:
+    css: [default, "usma.css", "usma-fonts.css"]
+    nature:
+      ratio: '4:3'
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(
+  cache = TRUE,
+  echo = FALSE,
+  warning = FALSE, 
+  message = FALSE,
+  fig.align = 'center') 
+```
+
+```{r load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = TRUE)
+bib <- ReadBib("references.bib", check = FALSE)
+
+print_bib_rmd <- function(bib, .opts = list(), start = 1, stop = NULL, decreasing = FALSE) {
+
+    bib <- sort(bib, decreasing = FALSE)
+
+    if (!length(bib)) {
+        return(bib)
+    }
+
+    if (identical(class(bib), "bibentry")) {
+        bib <- as.BibEntry(bib)
+    }
+
+    keys <- unlist(bib$key)
+    ind <- keys %in% names(.cites$indices)
+
+    if (!any(ind)) {
+        message("You haven't cited any references in this bibliography yet.")
+        return()
+    }
+
+    if (length(.opts$bib.style)) {
+      bibstyle <- .opts$bib.style
+    } else {
+      bibstyle <- .BibOptions$bib.style
+    }
+
+    if (length(.opts$cite.style)) {
+      citestyle <- .opts$cite.style
+    } else {
+      citestyle <- .BibOptions$cite.style
+    }
+
+    if (length(.opts$style)) {
+      style <- .opts$style
+    } else {
+      style <- .BibOptions$style
+    }
+
+    bib <- bib[[ind]] # gets citations to print
+
+    if (bibstyle == citestyle) {
+        if (bibstyle == "numeric") {
+            if (length(bib) == length(.cites$labs)) {
+                bib <- bib[[names(.cites$labs)]]
+                .opts$sorting <- "none"
+                bib$.index <- structure(.cites$labs, names = NULL)
+            }
+        } else { 
+          bib$.index <- .cites$labs[keys[ind]]
+        }
+    }
+
+    if (length(.opts)) {
+        old.opts <- BibOptions(.opts)
+        on.exit(BibOptions(old.opts))
+    }
+
+    if (style == "yaml") {
+        cat("\n---\nnocite:", sQuote(paste0(paste0("@", names(.cites$indices)), 
+            collapse = ", ")))
+        cat("\n...  \n\n")
+    }
+    if (is.null(stop)) {
+      stop <- length(bib)
+    } 
+    bib <- bib[start:stop]
+    print(bib)
+}
+
+environment(print_bib_rmd) <- asNamespace("RefManageR")
+
+```
+
+```{r libs, include=FALSE, cache=FALSE, message=FALSE}
+library(data.table)
+library(tidyverse)
+library(ggplot2)
+library(pdftools)
+library(huxtable)
+```
+
+# Agenda
+- Admin
+
+- Review
+
+- Competition
+
+  - A Firm's Supply Curve
+  - Entry / Exit Decision
+  
+- The Death of the Station Wagon
+
+???
+
+Feel:   Enlightened about different costs
+Know:   How to model cost structures, Sunk Costs
+Do:     Identify perfectly competitive markets, model costs and supply
+
+---
+# Course Admin
+
+- 17/18JUL Problem Set #3 DUE
+
+- 18/19JUL Problem Set #4 DUE
+
+- 19JUL WPR 2
+
+--
+
+.center[![](https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g)]
+
+---
+# Review
+
+- Costs, Revenues, and Profits
+
+- Marginal Costs, Marginal Products
+
+- Economies of Scale
+  - Constant
+  - Diseconomies
+
+--
+
+.center[####Scarcity and Profits drive efficiency]
+
+---
+# Lesson Material
+
+
+
+---
+# Next time...
+
+---
+# References
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(bib)
+```
+
+---
+# Audiovisual
+
