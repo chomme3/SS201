@@ -9,6 +9,9 @@
 2. 
 
 
+1. Test \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l15.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l15.Rmd)\]
+2. 
+
 
 ## Details
 

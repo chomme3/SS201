@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson 15: Perfect Competition"
+subtitle: "Lesson ##: TEMPLATE"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:
@@ -20,8 +20,7 @@ knitr::opts_chunk$set(
   echo = FALSE,
   warning = FALSE, 
   message = FALSE,
-  fig.align = 'center')
-options(htmltools.dir.version = FALSE)
+  fig.align = 'center') 
 ```
 
 ```{r load_refs, include=FALSE, cache=FALSE}
@@ -119,62 +118,26 @@ library(huxtable)
 
 - Review
 
-- Competition
-
-  - A Firm's Supply Curve
-  - Entry / Exit Decision
-  
-- The Death of the Station Wagon
+- 
 
 ???
 
-Feel:   Enlightened about different costs
-Know:   How to model cost structures, Sunk Costs
-Do:     Identify perfectly competitive markets, model costs and supply
+Feel:   
+Know:   
+Do:     
 
 ---
-# Course Admin
+# Admin
 
-- 17/18JUL Problem Set #3 DUE
+- Assignments
 
-- 18/19JUL Problem Set #4 DUE
-
-- 19JUL WPR 2
-
---
-
-.center[![](https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g)]
-
----
-# Review
-
-.center[![](https://youtu.be/Y7KD9CM_PjM?t=9)]
+- In-Class AAR
 
 
 ---
 # Review
 
-<iframe width="1029" height="579" src="https://www.youtube.com/embed/Y7KD9CM_PjM?t" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
----
-# Review
-
-<iframe width="1029" height="579" src="https://www.youtube.com/embed/Y7KD9CM_PjM" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
----
-
-- Costs, Revenues, and Profits
-
-- Marginal Costs, Marginal Products
-
-- Economies of Scale
-  - Constant
-  - Diseconomies
-
---
-
-.center[####Scarcity and Profits drive efficiency]
 
 ---
 # Lesson Material
