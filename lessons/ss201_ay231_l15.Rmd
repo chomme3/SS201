@@ -146,23 +146,17 @@ Do:     Identify perfectly competitive markets, model costs and supply
 .center[![](https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g)]
 
 ---
-# Review
+class: inverse, center, middle
 
-.center[![](https://youtu.be/Y7KD9CM_PjM?t=9)]
-
-
----
-# Review
-
-<iframe width="1029" height="579" src="https://www.youtube.com/embed/Y7KD9CM_PjM?t" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+# Questions from last lessons?
 
 ---
 # Review
 
-<iframe width="1029" height="579" src="https://www.youtube.com/embed/Y7KD9CM_PjM" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="823" height="463" src="https://www.youtube.com/embed/Y7KD9CM_PjM?t" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 ---
+# Review
 
 - Costs, Revenues, and Profits
 
@@ -174,11 +168,98 @@ Do:     Identify perfectly competitive markets, model costs and supply
 
 --
 
-.center[####Scarcity and Profits drive efficiency]
+.center[.black[Scarcity and Profits drive efficiency!!]]
 
 ---
-# Lesson Material
+# Economics is awesome because...
 
+--
+
+- Allows us a useful framework to think about the world
+
+--
+
+- Doesn't teach us "what" to think, but a "way" to think
+
+--
+
+- Today, we're going to play around with the notion of "competition" and how it applies to firms
+
+---
+# Let's develop a model of competition...
+
+--
+
+We are going to start simple. 
+
+--
+
+We can always make the model more difficult / complicated, but think of this as the "crawl" phase
+
+---
+# Assumptions in our Model
+
+1. Many buyers, utility maximizing
+2. Many firms, producing identical units, profit maximizing
+3. Firms have no market power or ability to influence prices (Price Takers)
+4. Firms can freely enter and exit the market (No bureaucracy)
+5. No gains from buying or selling in bulk
+
+--
+
+Questions that follow...
+
+- Short Run
+  - How much should a firm produce?
+  - When should a firm enter or exit a market? 
+
+- Long Run
+  - What does profit look like in this market?
+
+
+---
+
+
+.center[AT THE MARGIN!]
+--
+
+.center[Marginal Benefit = Marginal Cost]
+
+--
+
+$$\frac{MU_{x_1}}{MU_{x_2}} = \frac{P_1}{P_2}$$
+
+.center[SAY WHAT?!]
+
+--- 
+# How does this translate to our competitive firm?
+
+Where should our firm produce?
+
+--
+
+Marginal Benefit = Marginal Cost
+
+--
+
+.pull-left[
+Marginal Benefit = ??
+
+-- 
+
+Marginal Revenue
+
+]
+
+.pull-right[Marginal Cost = ??]
+
+
+---
+# Website Test
+
+```{r, echo=FALSE}
+knitr::include_url("https://www.kayak.com/flights/NYC-SEA/2022-07-28?sort=bestflight_a&fs=airlines=-F9,B6,MULT,NK")
+```
 
 
 ---
@@ -193,3 +274,6 @@ PrintBibliography(bib)
 ---
 # Audiovisual
 
+https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g
+
+https://www.youtube.com/embed/Y7KD9CM_PjM?t
