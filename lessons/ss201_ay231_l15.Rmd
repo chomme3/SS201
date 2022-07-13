@@ -210,7 +210,6 @@ We can always make the model more difficult / complicated, but think of this as 
 
 ---
 
-
 # Assumptions in our Model
 
 1. Many buyers, utility maximizing
@@ -233,8 +232,13 @@ Questions that follow...
 
 ---
 
+# How much should a firm produce?
 
-# Where do leaders make decisions?
+Economic Leader Principle # 2
+
+Where do leaders make decisions?
+
+--
 
 .center[AT THE MARGIN!]
 
@@ -251,6 +255,22 @@ $$\frac{MU_{x_1}}{MU_{x_2}} = \frac{P_1}{P_2}$$
 .center[SAY WHAT?!]
 
 ---
+# How much should a firm produce?
+
+Marginal Benefit = Marginal Cost
+
+--
+
+Marginal Benefit = ??
+
+---
+# How much should a firm produce?
+
+Marginal Benefit = Marginal Cost
+
+--
+
+Marginal Benefit = Marginal Revenue = Price * Quantity = $P*Q$
 
 # How does this translate to our competitive firm?
 
