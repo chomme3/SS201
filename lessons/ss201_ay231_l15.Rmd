@@ -125,7 +125,7 @@ library(huxtable)
   - A Firm's Supply Curve
   - Entry / Exit Decision
   
-- The Death of the Station Wagon
+- Talk is Cheap? The Threat of Entry in the Airlines
 
 ???
 
@@ -144,9 +144,7 @@ Do:     Identify perfectly competitive markets, model costs and supply
 
 - 19JUL WPR 2
 
---
-
-.center[![](https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g)]
+<!-- .center[![](https://media3.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif?cid=ecf05e4735qzvc6v0h1qqye2lw9ti8w19zhsk3jvfnpp8c94&rid=giphy.gif&ct=g)] -->
 
 ---
 class: inverse, center, middle
@@ -156,13 +154,11 @@ class: inverse, center, middle
 
 ---
 
-
 # Review
 
 <iframe width="823" height="463" src="https://www.youtube.com/embed/Y7KD9CM_PjM?t" title="Work Together and Survive | Gladiator | All Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 ---
-
 
 # Review
 
@@ -174,60 +170,51 @@ class: inverse, center, middle
   - Constant
   - Diseconomies
 
---
-
-.center[.black[Scarcity and Profits drive efficiency!!]]
+.center[.black[Profit seeking motive drives efficiency!!]]
 
 ---
-
 
 # Economics is awesome because...
 
---
-
 - Allows us a useful framework to think about the world
-
---
 
 - Doesn't teach us "what" to think, but a "way" to think
 
---
-
-- Today, we're going to play around with the notion of "competition" and how it applies to firms
+- Today, we're going to play around with the notion of "competition" and how it applies to firms and their decision making
 
 ---
-
 
 # Let's develop a model of competition...
 
---
+#### Assumptions
 
-We are going to start simple. 
+1. Many buyers, utility maximizing
 
---
+2. Many firms, producing identical units, profit maximizing
 
-We can always make the model more difficult / complicated, but think of this as the "crawl" phase
+3. Firms have no market power or ability to influence prices (Price Takers)
+
+4. Firms can freely enter and exit the market (No bureaucracy)
+
+5. No gains from buying or selling in bulk
+
+6. There are three time frames: present, short run, and long run
+
+7. Perfect Information (in the present and short run)
 
 ---
 
-# Assumptions in our Model
+# Some Questions that follow...
 
-1. Many buyers, utility maximizing
-2. Many firms, producing identical units, profit maximizing
-3. Firms have no market power or ability to influence prices (Price Takers)
-4. Firms can freely enter and exit the market (No bureaucracy)
-5. No gains from buying or selling in bulk
+- What does a firm's cost structure look like?
 
---
+- How much should a firm produce?
 
-Questions that follow...
+- When should a firm enter or exit a market?
 
-- Short Run
-  - How much should a firm produce?
-  - When should a firm enter or exit a market? 
+- When does a firm temporarily shut down?
 
-- Long Run
-  - What does profit look like in this market?
+- What does profit look like in this market?
 
 
 ---
@@ -248,74 +235,115 @@ Where do leaders make decisions?
 
 --
 
+Consumer Theory told us that we optimize between two goods where:
+
 $$\frac{MU_{x_1}}{MU_{x_2}} = \frac{P_1}{P_2}$$
 
 --
 
-.center[SAY WHAT?!]
+.center[What about firms?]
 
 ---
 # How much should a firm produce?
 
-Marginal Benefit = Marginal Cost
+Marginal Benefit = Marginal Revenue = Price of Good Sold = P
 
---
+Marginal Cost = MC
 
-Marginal Benefit = ??
+.center[
+$\therefore$ firms should produce where P = MC]
 
----
-# How much should a firm produce?
 
-Marginal Benefit = Marginal Cost
-
---
-
-Marginal Benefit = Marginal Revenue = Price * Quantity = $P*Q$
-
-# How does this translate to our competitive firm?
-
-Where should our firm produce?
-
---
-
-Marginal Benefit = Marginal Cost
-
---
-
-.pull-left[
-Marginal Benefit = ??
-
--- 
-
-Marginal Revenue
-
-]
-
-.pull-right[Marginal Cost = ??]
-
+```{r market}
+knitr::include_graphics("img/sd_firm.png")
+```
 
 ---
+# When should a firm enter or exit a market?
 
-
-# Website Test
-
-```{r, echo=FALSE}
-knitr::include_url("https://www.kayak.com/")
+```{r entry}
+knitr::include_graphics("img/entry.png")
 ```
 
 
 ---
+class: middle
+
+# When does a firm temporarily shut down?
+
+.pull-left[.center[**Derivation**]
+$$TR < VC$$
+</br>
+$$\frac{TR}{Q} < \frac{VC}{Q}$$</br>
+
+$$AR < AVC$$</br>
+
+$$P < AVC$$
+]
 
 
-# Iframe
+.pull-right[
+</br></br></br></br>
+```{r shutdown, out.width='120%'}
+knitr::include_graphics("img/shutdown.png")
+```
+]
+---
+# What does profit look like in this market?
+```{r exit, out.width='70%'}
+knitr::include_graphics("img/exit.png")
+```
 
-<iframe width="823" height="463" src="https://www.kayak.com/" frameborder="0" allowfullscreen data-external="1"></iframe>
+.center[**+**]
 
+```{r entry2, out.width='70%'}
+knitr::include_graphics("img/entry.png")
+```
 
 ---
+# What does profit look like in this market?
+</br></br>
 
+```{r lr}
+knitr::include_graphics("img/longrun.png")
+```
 
+---
+# Great! We've got a model!
+
+.center["Essentially, all models are wrong, but some are useful."
+
+*George E.P. Box*]
+
+```{r box, out.width = '80%'}
+knitr::include_graphics("img/box.jpg")
+```
+
+---
+# So where is this useful?
+
+Examples of Perfectly Competitive Markets
+
+--
+
+- Agriculture
+
+- Oil
+
+- Currencies
+
+- Airlines
+
+---
+# Airline Example
+
+```{r airlines, out.width = '60%'}
+knitr::include_graphics("img/airlines.png")
+```
+
+---
 # Next time...
+
 
 ---
 
