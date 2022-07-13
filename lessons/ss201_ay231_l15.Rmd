@@ -280,7 +280,7 @@ Marginal Revenue
 # Website Test
 
 ```{r, echo=FALSE}
-knitr::include_url("https://www.kayak.com/flights/NYC-SEA/2022-07-28?sort=bestflight_a&fs=airlines=-F9,B6,MULT,NK")
+knitr::include_url("https://www.kayak.com/")
 ```
 
 ---
