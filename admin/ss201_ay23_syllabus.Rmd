@@ -1,0 +1,183 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: AY 23-1
+
+bibliography: ../lessons/references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+header-includes: 
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \usepackage{threeparttable}
+  - \usepackage{bm}
+  - \DeclareMathOperator{\Var}{Var}
+  - \usepackage{dcolumn}
+  - \usepackage{changepage}
+  - \usepackage{multirow}
+  - \usepackage[normalem]{ulem}
+  - \useunder{\uline}{\ul}{}
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+\maketitle
+
+# Course Goals and Objectives {#sec:goals}
+
+Upon completion of SS201, Cadets will have the ability to identify, understand, analyze, and communicate to others the underlying economic aspects of:
+
+- **Decision-Making:** Cadets can identify the opportunity costs and trade-offs associated with a particular course of action.  Optimization, marginal analysis, and the concept of diminishing marginal returns are introduced as critical tools in Cadets' decision-making process.
+
+- **Human Behavior:** Cadets will understand the importance and impact of scarcity of resources, rational decision-making, the effect of incentives, the role of preferences, and the significance of risk attitudes in predicting and analyzing human behavior.  
+
+- **Human Behavior:** Cadets will understand the importance and impact of scarcity of resources, rational decision-making, the effect of incentives, the role of preferences, and the significance of risk attitudes in predicting and analyzing human behavior.  
+
+- **Markets:** Cadets understand the concept of market equilibrium and its corresponding impacts on economic efficiency and equity.  They can identify "gains from trade" and the creation of economic surplus by market mechanisms.  Furthermore, Cadets understand the implications of market competition for distribution of economic surplus, product differentiation, product availability, and economic efficiency.  In a macroeconomic setting, Cadets can identify relative strengths and weaknesses of indicators of aggregate macroeconomic well-being; understand the roles, responsibilities, and impact of fiscal and monetary policymakers; and can describe the importance of institutions in the promotion of economic growth.
+ 
+- **Modeling:** Cadets understand the process of modeling household and firm behavior, based on economic theory and marginal analysis. They can use models for firm cost structures, market supply/demand, and economic growth to understand real world outcomes.  Cadets gain an appreciation for the limitations of these models by understanding the importance of modeling assumptions and comparison of model predictions with real world outcomes.  They understand positive versus normative analysis and can apply the scientific method to the study of human behavior.
+ 
+- **Public Sector:** Cadets can identify substantive differences in the efficiency and equity of market outcomes, instances in which markets fail (e.g., market externalities), and the potential to influence household and firm decisions through market incentives.  They understand the resulting economic consequences of government intervention in markets, such as price controls, taxes, and trade regulation.  Additionally, Cadets can identify the probable winners and losers of public policy, measured by gain or loss of economic surplus.
+ 
+- **Information:** Cadets understand the importance of information in the ability of a market mechanism to function efficiently.  Cadets can identify the market consequences of asymmetric information and the role of economic incentives in creating barriers to information sharing.  They can also understand the critical distinction between causation and correlation and how information inefficiencies can lead to incorrect claims of causality.
+
+# Student Expectations and Responsibilities {#sec:expec}
+
+1. **Isolation and Quarantine.** Cadets that are placed into isolation or quarantine for any reason must immediately notify their instructor. Cadets are encouraged to use multiple methods of contact (Teams, email) to ensure that the instructor receives the message quickly. The instructor will either ensure the quarantined cadet can attend the class remotely or make alternative arrangements. During AY23-1 all sections are planned to be in-person. However, if conditions warrant, some instructors may move to a remote environment to facilitate instruction for cadets in quarantine. Being placed in isolation or quarantine is not an excuse for missing class; I will annotate attendance per the Dean’s policy.
+
+2. **Lesson Preparation.**  Cadets are expected to complete all reading assignments and complete the pre-class assignment in Cengage prior to attending each lesson. In the syllabus, each lesson includes individual lesson objectives that support the broader Core Curriculum and Course Goals addressed above and are used to guide discussion and preparation for graded events. At the conclusion of each lesson, cadets should be able to understand each lesson objective —if not, see me for additional instruction. Your Pre-Lesson assignments are due at 2359 the night before class.
+
+3.  **Absences.**  Cadets are required to notify their instructor at least 48 hours in advance of any conflict that will prevent them from attending class.  Cadets are required to notify their instructor at least 72 hours in advance if a conflict arises that will prevent the completion of a graded requirement, in or out of class.  After notification, I will arrange a time to complete the exam outside of class.  
+
+4. **Laptops / Tablets.**  In-person classes will not use computers in the classroom. Tablets with a digital writing pen are authorized if placed in airplane mode prior to the start of class.
+
+5. **Cell Phones.** Cadets are not authorized to have their cell phones in class.
+
+6. **Restroom Use.** If a cadet needs to use the restroom during class, that cadet will not be allowed to re-enter the class. There is a break period in-between classes which cadets may use the restroom, once in class, however, I aim to keep distractions to a minimum. 
+
+7. **Additional Instruction.** I have synchronized my calendar with calendly and cadets may schedule 30-minute time blocks up to 24 hours in advance at the following link: [https://calendly.com/carson-homme/ai](https://calendly.com/carson-homme/ai). If unable to schedule during those times, email me with availability for the week and I will choose time. 
+
+8. **WPR Resources.**  For in-class graded requirements (i.e., WPRs, Quizzes), cadets may use their issued calculator, a straight-edge, pens, and pencils.  Unless specifically mentioned by the instructor, no other materials are authorized. All cadets will complete a digital honor statement following completion of the exam. Cadets should plan on completing their tests in their assigned classroom.
+
+\begin{center}
+\textbf{All tests are under Academic Security until explicitly released by their instructor. This means that you are not allowed to discuss the content of a test that you have taken with anyone.} 
+\end{center}
+
+# Course Requirements and Policies  {#sec:req}
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Graded Event            & Points     & Percent    \\ \midrule
+Pre-Class Assignments   & 100       & 10 \%  \\
+Problem Sets x 6        & 150       & 15 \%                 \\
+Paper                   & 70        & 7 \%  \\
+WPR x 3                 & 405       & 40.5 \% \\
+TEE                     & 225       & 22.5 \% \\
+Instructor Points       & 50        & 5 \%      \\ \midrule
+\textbf{Total}          & 1000      & 100 \%
+\end{tabular}
+\end{center}
+\end{table}
+
+1. **Graded Requirements.**  My evaluation of cadet performance is built upon several graded course requirements (listed below). The specific objectives of each graded assignment may vary, but the overarching goal is to assess cadet understanding of course material and ability to apply course principles beyond basic textbook answers.
+
+    a. Pre-Class Assignments.  There is a pre-class assignment for every class period, with the exception of the 3 WPRs and the Lesson 30 Review. These assignments are meant to incentivize class preparation and are worth 5 points each. We will take the percentage of the available points that you earn and assign you that as a grade. They are due at midnight the day prior to your class to ensure equal access and opportunity.  
+
+    b. Problem Sets.  There are six problem sets due during the course, four during the micro block, and two during the macro block.  These problem sets provide practice and assessment on in-depth economics problems that require challenging math and graphing techniques. The problem set answer key will be posted on the day that the problem sets are due, so problem sets cannot be turned in late for credit.
+
+    c. In-Class Exams (WPR).  Cadets will take three WPRs (Two Micro Block and One Macro Block). The first Micro WPR will focus on assessing cadet proficiency in the foundational models and concepts. The second Micro WPR will evaluate students’ understanding of the major economic concepts, building and expanding on the foundations learned in the first block. The purpose of the Macro WPR is to assess students’ comprehension of the major macroeconomic concepts introduced in the macro block.  Test questions will be multiple choice or true/false. Do not allow this to lull you into complacency. These ARE NOT your High School Multiple Choice tests. Many questions require multiple step analysis to answer correctly. WPRs will take place in Blackboard. All WPRs are under academic security until released by your instructor.
+
+    d. Contemporary Economics Essay. This is an individual assignment worth 70 points and will be due at the end of the Microeconomics block. Students are highly encouraged to choose a prompt from contemporary economics issues offered in the prompts, but may (on a very limited basis) see their instructor to write about a recent and relevant topic where there is a passionate interest. Essays are limited to less than 1200 words. A great deal more information is available in the essay prompt (forthcoming).
+
+    e. Term-End Exam.  Students will take a 3.5 hour, comprehensive final examination at the end of the course worth 22.5% of the final grade (225 points).  The Term-End Exam (TEE) is used to assess students’ knowledge and understanding of key economic principles, models, and policies studied throughout the course in each major block: Microeconomics, Consumer Choice & Firm Theory, and Macroeconomics. 
+
+    f. Instructor Points. Students will receive up to 50 points, given at my discretion. I will assess cadets throughout the course on daily preparation, class participation, contribution to peer learning, attitude, military bearing, and appearance. I may also elect to assign additional class preparation exercises (e.g., reading questions for an assigned article).
+
+2. **Exam Terminology.**  SS201 course exams will use the following terms during graded events to include Writs, WPRs, and the TEE. These definitions are provided to ensure cadets understand the work required to receive full credit.
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|p{0.1\linewidth}|p{0.7\linewidth}|}
+\hline
+Term      & Action Required of Cadet                                                                                                                                                                                            \\ \hline
+Define    & Specify distinctly the precise nature of a word, term or phrase as it applies to our economic models. Does not require analysis, elucidation or a verbatim answer.                                                \\ \hline
+List      & Specify one or more items or terms relating to a specific economic concept or category. No explanation required.                                                                                                  \\ \hline
+Graph     & Represent or portray on axis a specified action or series of actions. Requires correct labels \& units on all curves and axis and explanatory arrows if needed.                                                   \\ \hline
+Explain   & The most detailed answer cadets must provide. Requires a complete discussion of actions, interactions and follow on events/implications. Can require graphical   depiction in order to fully answer the question. \\ \hline
+Draw      & Annotate a requested curve, point, or line on a provided graph(s).                                                                                                                                                  \\ \hline
+Calculate & To mathematically compute or manipulate an equation or series of equations in order to arrive at a single answer, value, or equation.                                                                             \\ \hline
+State     & Specify the answer or outcome requested. No explanation required                                                                                                                                                    \\ \hline
+Denote    & To indicate or mark on a graph or axis a requested quantity or variable.                                                                                                                                            \\ \hline
+Show      & To write out all intermediate steps used in arriving at the final answer to a question.                                                                                                                             \\ \hline
+Label     & Annotate correct names, abbreviations, variables, units or other relevant information to a blank set of axes or a graph.                                                                                          \\ \hline
+Describe  & Detailed answer covering the main characteristics of the topic or concept. A lower level of answer than explain.                                                                                                  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+3. **Letter Grade Scale.** The course consists of 1000 total points.  Letter grades will be awarded based on the percentage of maximum points earned.  There will be no forced distribution
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lcccl}
+\toprule
+Grade & Points       & Percentage       & Quality Points & Subjective Interpretation                                         \\ \midrule
+A+    & 970   - 1000 & 97.0  - 100.0    & 4.33           & Mastery of concepts. \\
+A     & 930   - 969  & 93.0  -     96.9 & 4.00           &                                                      \\ 
+A-    & 900   - 929  & 90.0  -     92.9 & 3.67           &                                                                    \\ \midrule 
+B+    & 870   - 899  & 87.0  -     89.9 & 3.33           & Solid understanding of concepts. \\ 
+B     & 830   - 869  & 83.0  -     86.9 & 3.00           &                                                                  \\ 
+B-    & 800   - 829  & 80.0  -     82.9 & 2.67           &                                                                  \\  \midrule
+C+    & 770   - 799  & 77.0  -     79.9 & 2.33           & Acceptable understanding. \\ 
+C     & 730   - 769  & 73.0  -     76.9 & 2.00           &                                                                      \\ \midrule 
+C-   & 700   - 729  & 70.0  -     72.9 & 1.77            & Doubtful understanding.  \\ 
+D     & 670   - 699  & 67.0  -     69.9 & 1.00           &                                                  \\ \midrule
+F     & 0   - 670    & \textless   67.0 & 0.00           & Failed to demonstrate understanding.    \\
+\end{tabular}
+\end{center}
+\end{table}
+
+4. **Course Completion Requirements.** To pass SS201 a cadet must receive a passing grade of 67% or greater in total course points (670 points out of 1000 points possible) and achieve a passing grade on at least one of the four exams. Furthermore, any cadet that does not achieve a passing grade (67%) on the TEE is subject to course failure at the discretion of the Social Sciences Department Head.
+
+5. **Re-Grades.** The Department of Social Sciences seeks to evaluate all graded requirements fairly and ensure cadets understand why their work earned the grade they received. If you do not agree with a grade for a major requirement, speak with me first within one week of receiving notice of the grade in question. After our discussion, if you still feel your work deserves a higher grade, you can request a re-grade of the submission by another Economics Instructor. You will receive the average of the two grades.
+
+6. **Late Submissions.** Timely submission of academic requirements is a duty. Late submissions require consideration of both disciplinary action and academic penalty. In the absence of extenuating circumstances, I will subtract one letter grade (10%) per day an assignment is late. 
+
+7. **Original Work.** All work for this course must be completed during this semester. Cadets may not turn in assignments that were completed for other classes nor in previous iterations of this course. 
+
+8.  **Documentation of Written Work.** IAW the Dean's Documentation of Written Work, all graded assignments must be accompanied by an acknowledgement statement.  
+
+
+# Course Textbook  {#sec:text}
+
+Mankiw. Principles of Economics, Ninth Edition. Cengage Learning, 2020.
+
+\textit{Cengage Unlimited with Mindtap Access Required.}
+
