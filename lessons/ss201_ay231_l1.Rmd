@@ -284,7 +284,7 @@ Randomly assigned all cadets taking SS201 to three groups:
 ---
 # Why no computers in the classroom?
 
-```{r no_comp, out.width='80%'}
+```{r no_comp, out.width='80%', fig.align='center'}
 knitr::include_graphics("img/no_comp.png")
 ```
 
@@ -306,35 +306,74 @@ class: inverse, center, middle
 .pull-right[![](https://i.imgur.com/IP83fC1.gif)]
 
 ---
-# The Economic Leader
+# What is economics?
+
+.center[
+"If you only like philosophy, then be a philosopher. If you only like history, then be a historian. If you only like mathematics, then be a mathematician. But if you like all of those things, you should be an economist."
+
+*Tim S. Fuerst*
+]
+
+</br>
+</br>
+</br>
 
 .center[Economics is the study of decision-making ... a discipline focused on the optimal allocation of scarce resources that have alternate uses.
 
 Leaders face scarcity in each decision – scarcity in time, people, and resources that have different uses. Leaders seek to allocate resources to their highest valued use.
 
-As such, leadership and economics go hand in hand. Great leaders are good economists (even when they don’t realize it).
-]
+As such, leadership and economics go hand in hand. Great leaders are good economists (even when they don’t realize it).]
+
+
+
+
 ---
 # The Economic Leader
 
+
+
+---
+# The Economic Leader
+
+.center[
 Six fundamental economic principles underpin decision-making for any leader striving to achieve optimality in their organization.
 
-1. There is a trade-off in every decision a leader makes.What we give up constitutes the opportunity cost of a decision.
+.panelset[
+.panel[.panel-name[(1)]
+There is a trade-off in every decision a leader makes. What we give up constitutes the opportunity cost of a decision.
+]<!---->
 
-2. Leaders think and decide on the margin. To optimize, decision-makers ensure the marginal cost of a choice never exceeds its marginal benefit.
+.panel[.panel-name[(2)]
+Leaders think and decide on the margin. To optimize, decision-makers ensure the marginal cost of a choice never exceeds its marginal benefit.
+]<!---->
 
-3. Leaders use their influence to solve coordination problems by shaping incentives. Leaders align incentives to influence individual action and create mutually beneficial outcomes for stakeholders. Great leaders anticipate the unintended consequences of their decisions by maintaining a keen understanding of individual motivations and likely responses.
+.panel[.panel-name[(3)]
+Leaders use their influence to solve coordination problems by shaping incentives. Leaders align incentives to influence individual action and create mutually beneficial outcomes for stakeholders. Great leaders anticipate the unintended consequences of their decisions by maintaining a keen understanding of individual motivations and likely responses.
+]<!---->
 
-4. Trade can make all parties better off by creating a “win-win.” Leaders realize the benefits from trade by facilitating specialization and comparative advantage among the people they lead.
+.panel[.panel-name[(4)]
+Trade can make all parties better off by creating a “win-win.” Leaders realize the benefits from trade by facilitating specialization and comparative advantage among the people they lead.
+]<!---->
 
-5. Perfect information leads to efficient outcomes, but we often make decisions with imperfect information. Leaders must seek equilibrium in gathering more information and being decisive. Leaders must appropriately identify risk, and balance the tradeoff between risk and reward.
+.panel[.panel-name[(5)]
+Perfect information leads to efficient outcomes, but we often make decisions with imperfect information. Leaders must seek equilibrium in gathering more information and being decisive. Leaders must appropriately identify risk, and balance the tradeoff between risk and reward.
+]<!---->
 
-6. Based on the organization’s goals, leaders have a normative responsibility to seek equilibrium between efficiency and equity. The efficient solution may not be equitable, and the equitable solution may not be efficient.
+.panel[.panel-name[(6)]
+Based on the organization’s goals, leaders have a normative responsibility to seek equilibrium between efficiency and equity. The efficient solution may not be equitable, and the equitable solution may not be efficient.
+]<!---->
+]<!----End of Panel---->
+]
 
-Leaders have humility in thought and action. They realize that correlation does not equal causation. They appreciate the assumptions and associated limitations in the models and perspectives that they use to view the world. Leaders are forced to deal with the messy reality, and they recognize that their own biases can influence decision-making.
----
-# What is economics?
+--
 
+</br></br></br>
+
+.center[
+At End State:
+
+*Leaders have humility in thought and action. They realize that correlation does not equal causation. They appreciate the assumptions and associated limitations in the models and perspectives that they use to view the world. Leaders are forced to deal with the messy reality, and they recognize that their own biases can influence decision-making.*
+]
 
 ---
 # Next time...
@@ -350,5 +389,5 @@ PrintBibliography(bib)
 
 ---
 # Audiovisual
-test
+
 
