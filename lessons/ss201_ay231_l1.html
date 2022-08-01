@@ -4,8 +4,31 @@
     <title>SS201: Principles of Economics</title>
     <meta charset="utf-8" />
     <meta name="author" content="MAJ Carson Homme" />
-    <script src="ss201_ay231_l1_files/header-attrs-2.14.3/header-attrs.js"></script>
-    <link href="ss201_ay231_l1_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/header-attrs/header-attrs.js"></script>
+    <link href="ss201_ay231_l1_files/remark-css/default.css" rel="stylesheet" />
+    <link href="ss201_ay231_l1_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/tile-view/tile-view.js"></script>
+    <link href="ss201_ay231_l1_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/panelset/panelset.js"></script>
+    <script src="ss201_ay231_l1_files/clipboard/clipboard.min.js"></script>
+    <link href="ss201_ay231_l1_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <script src="ss201_ay231_l1_files/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="ss201_ay231_l1_files/fabric/fabric.min.js"></script>
+    <link href="ss201_ay231_l1_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="ss201_ay231_l1_files/js-cookie/js.cookie.js"></script>
+    <script src="ss201_ay231_l1_files/peerjs/peerjs.min.js"></script>
+    <script src="ss201_ay231_l1_files/tiny.toast/toast.min.js"></script>
+    <link href="ss201_ay231_l1_files/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/xaringanExtra-broadcast/broadcast.js"></script>
+    <link href="ss201_ay231_l1_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/shareon/shareon.min.js"></script>
+    <link href="ss201_ay231_l1_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="ss201_ay231_l1_files/xaringanExtra-shareagain/shareagain.js"></script>
     <link rel="stylesheet" href="usma.css" type="text/css" />
     <link rel="stylesheet" href="usma-fonts.css" type="text/css" />
   </head>
@@ -32,19 +55,19 @@ class: center, middle, inverse, title-slide
 
 
 
-
-
-# Overview
+# Agenda
 - Intros
 
-- Course Admin
-  - What you can expect from me
-  - What I expect from you
+- Admin
+  - Course Schedule
+  - Syllabus
+  - Expectations
+
+- Causal Inference Primer
+  - Why No Computers in the Classroom
 
 - **Why is the Army making me take this course?**
   - Economic Leader Principles
-  
-
 
 ???
 
@@ -60,130 +83,116 @@ Do:     Admin Tasks, Reading for Next Time
 
 - Hometown
 
-- Academic Major / Minor
+- What you do here other than school
 
-- Sport / Club
+- Favorite TV Show or Book
 
 - "Walk-Out" Song
 
 ---
 # Course Admin
-- 1,000 Point Course
+.panelset[
+.panel[.panel-name[Schedule]
+- 3 Blocks
+  - Micro - Consumer
+  - Micro - Firms
+  - Macro
 
-- 
+- Point Breakdown
+.pull-left[
+|                                         |
+|----------------------------:|:---------:|
+|     Pre-Class Assignments   |     100   |
+|     Problem Sets x 6        |     150   |
+|     Paper                   |     70    |
+|     WPR x 3                 |     405   |
+|     TEE                     |     225   |
+|     Instructor Points       |     50    |
+| **TOTAL**                     | **1000** |
+]
+]&lt;!----&gt;
 
-- 
+.panel[.panel-name[Syllabus]
 
----
-# Course Admin
-### Class Policies
 - No computers (typing), digital pens on tablets OK
-
---
 
 - No bathroom breaks, leaving forfeits the lesson
 
---
+- AI, schedule via calendly @ https://calendly.com/carson-homme/ai
 
-- 
+- Class Slides available @ https://github.com/chomme3/SS201
 
----
-# Course Admin
-### What You Can Expect from Me
+]&lt;!----&gt;
 
-- The Three "A's": Around, Available, and Accessible
+.panel[.panel-name[Expectations]
+What you can expect from me:
+- Committed to showing you the science as well as the art of economics
 
---
+- If I don't know the answer to a question, I'll find it. Try me. 
 
-- Proficiency and ability to communicate. I'm here to challenge the way you think / see the world
+- Plenty of people here to talk Army, but I'm the only one here to talk economics
 
---
+- This may be the only economics course you ever take, so I will prioritize the conversation accordingly
 
-- Third Stanza of the Ranger Creed
-
---
-
-.center[*"Never shall I fail my comrades. I will always keep myself mentally alert, physically strong, and morally straight and I will shoulder more than my share of the task, whatever it may be, one-hundred percent and then some."*]
-
---
-
-- This may be the only economics course you take, many here can talk Army, but I'm the only one to talk econ, so I prioritize accordingly
-
---
-
-.center[**Did I miss anything?**]
-
----
-# Course Admin
-### What I Expect from You
-
-Three P's:
-
---
+The "Three P's" I Expect from You:
 
 - **Proficient** in the basics (uniform, haircut, rolling sleeves, etc.)
-
---
 
 - **Prepare** for lessons, tests, and assignments
   - Come to class prepared, with any and all questions
   
   - I am going to teach above the textbook. 
 
---
-
 - **Participate** in class
-.center[
-"There is no such thing as a stupid question, only poor timing."
 
-*Pat Robinson*, my 7th Grade Teacher]
-
----
-class: inverse, center, middle
-
-# Why is the Army making me take this course?
-
-.pull-left[![](https://i.imgur.com/CeUMbHI.gif)]
-.pull-right[![](https://i.imgur.com/IP83fC1.gif)]
----
-# Why economics?
-
-- Scarcity / Trade
-
-- Marginal Benefit = Marginal Cost
-
-
+]&lt;!----&gt;
+]&lt;!----End of Panel Set----&gt;
 
 ---
-# What is economics?
+# Causal Inference
+Economics is the study of human behavior through both theoretical and empirical means.
 
+It's a science and an art with intuition that one can prove using math.
+
+As a part of teaching above the textbook, I'm going to show you selected economic research to help guide our modelling process.
+
+Economists are concerned primarily with "causal effects"
+
+"Machine learning" and "big data" use algorithms and patterns within data to predict out of sample
+
+Economists look within a sample and identify causal relationships based in economic theory 
 
 ---
-# What is economics?
-### Why no computers in the classroom?
+#Causal Inference
+To find these patterns, economists rely on **natural experiments** or **randomized control trials**
 
---
+Within the natural world, I can only give a person one treatment and see that one outcome. 
 
-- Everyone cares about education. Economists call this "human capital"
+Thus, assuming that economists can randomly assign treatment (or isolate some random variation of treatment within a sample), they can estimate the effects of different treatments.
 
---
+Within these experiments, economists apply statistical techniques in the form of "regressions" to estimate specific effects.
 
-- Common belief is more education leads to more income
+Think of these regressions as tools to enhance precision and "take slack" out of coiled rope.
 
---
+The key challenge within this analysis is to eliminate "selection" and show that the treatment caused the outcome
 
-- More efficient education produces more income
+*If this interests you, check out Mastering Metrics by Josh Angrist or Causal Inference by Scott Cunningham*
 
---
+---
+# Why no computers in the classroom?
+
+Everyone cares about education. Economists call this "human capital"
+
+Common belief is more education leads to more income
+
+More efficient education produces more income
+
 &lt;/br&gt;&lt;/br&gt;
-
-
 
 .big[.center[Technology improves everything, right?]]
 
 ---
-# What is economics?
-### Why no computers in the classroom?
+# Why no computers in the classroom?
 
 .black[.center[Carter, Greenberg, and Walker (2017) test this...]]
 
@@ -200,19 +209,57 @@ Randomly assigned all cadets taking SS201 to three groups:
 .center[**Does technology improve learning and retention?**]
 
 ---
-# What is economics?
-### Why no computers in the classroom?
+# Why no computers in the classroom?
 
-&lt;img src="img/no_comp.png" width="80%" style="display: block; margin: auto;" /&gt;
-
---
+&lt;img src="img/no_comp.png" width="80%" /&gt;
 
 .small[
-- Values given in standard deviations. 
+- Values given in standard deviations.
 
 - Comparison being made between classes that allowed computers versus those that did not.
 
-- Negative values imply that students in "computer allowed" classrooms did much worse than those that were in computer "not allowed" classrooms]
+- Standard deviation is an average of how far scores were from the average.
+
+- EX. The Standard Deviation of WPR 1 was 11.59%. Being in a "computer allowed" classroom would imply that these cadets would have done **2.3% worse** on average.]
+
+---
+class: inverse, center, middle
+
+# Why is the Army making me take this course?
+
+.pull-left[![](https://i.imgur.com/CeUMbHI.gif)]
+.pull-right[![](https://i.imgur.com/IP83fC1.gif)]
+
+---
+# The Economic Leader
+
+.center[Economics is the study of decision-making ... a discipline focused on the optimal allocation of scarce resources that have alternate uses.
+
+Leaders face scarcity in each decision – scarcity in time, people, and resources that have different uses. Leaders seek to allocate resources to their highest valued use.
+
+As such, leadership and economics go hand in hand. Great leaders are good economists (even when they don’t realize it).
+]
+---
+# The Economic Leader
+
+Six fundamental economic principles underpin decision-making for any leader striving to achieve optimality in their organization.
+
+1. There is a trade-off in every decision a leader makes.What we give up constitutes the opportunity cost of a decision.
+
+2. Leaders think and decide on the margin. To optimize, decision-makers ensure the marginal cost of a choice never exceeds its marginal benefit.
+
+3. Leaders use their influence to solve coordination problems by shaping incentives. Leaders align incentives to influence individual action and create mutually beneficial outcomes for stakeholders. Great leaders anticipate the unintended consequences of their decisions by maintaining a keen understanding of individual motivations and likely responses.
+
+4. Trade can make all parties better off by creating a “win-win.” Leaders realize the benefits from trade by facilitating specialization and comparative advantage among the people they lead.
+
+5. Perfect information leads to efficient outcomes, but we often make decisions with imperfect information. Leaders must seek equilibrium in gathering more information and being decisive. Leaders must appropriately identify risk, and balance the tradeoff between risk and reward.
+
+6. Based on the organization’s goals, leaders have a normative responsibility to seek equilibrium between efficiency and equity. The efficient solution may not be equitable, and the equitable solution may not be efficient.
+
+Leaders have humility in thought and action. They realize that correlation does not equal causation. They appreciate the assumptions and associated limitations in the models and perspectives that they use to view the world. Leaders are forced to deal with the messy reality, and they recognize that their own biases can influence decision-making.
+---
+# What is economics?
+
 
 ---
 # Next time...
@@ -234,6 +281,7 @@ test
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
 <script>var slideshow = remark.create({
 "ratio": "4:3",
 "slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>"

@@ -22,9 +22,8 @@ library(tidyverse)
 library(huxtable)
 library(data.table)
 library(xaringanExtra)
-library(NHSRtheme)
-library(NHSRdatasets)
 library(icons)
+
 # set default options
 opts_chunk$set(echo=FALSE,
                collapse = TRUE,

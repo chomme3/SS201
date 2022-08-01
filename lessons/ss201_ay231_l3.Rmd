@@ -8,6 +8,7 @@ output:
     css: [default, "usma.css", "usma-fonts.css"]
     nature:
       ratio: '4:3'
+      beforeInit: "macros.js"
       slideNumberFormat: |
         <div class="progress-bar-container">
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
@@ -15,12 +16,33 @@ output:
         </div>
 ---
 ```{r setup, include=FALSE} 
-knitr::opts_chunk$set(
-  cache = TRUE,
-  echo = FALSE,
-  warning = FALSE, 
-  message = FALSE,
-  fig.align = 'center') 
+options(htmltools.dir.version = FALSE)
+library(knitr)
+library(tidyverse)
+library(huxtable)
+library(data.table)
+library(xaringanExtra)
+library(icons)
+
+# set default options
+opts_chunk$set(echo=FALSE,
+               collapse = TRUE,
+               fig.width = 7.252,
+               fig.height = 4,
+               dpi = 300)
+
+# set engines
+knitr::knit_engines$set("markdown")
+
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_webcam()
+xaringanExtra::use_broadcast()
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
 ```
 
 ```{r load_refs, include=FALSE, cache=FALSE}
@@ -30,7 +52,7 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = FALSE,
            dashed = TRUE)
-bib <- ReadBib("../references.bib", check = FALSE)
+bib <- ReadBib("references.bib", check = FALSE)
 
 print_bib_rmd <- function(bib, .opts = list(), start = 1, stop = NULL, decreasing = FALSE) {
 
@@ -103,14 +125,6 @@ print_bib_rmd <- function(bib, .opts = list(), start = 1, stop = NULL, decreasin
 
 environment(print_bib_rmd) <- asNamespace("RefManageR")
 
-```
-
-```{r libs, include=FALSE, cache=FALSE, message=FALSE}
-library(data.table)
-library(tidyverse)
-library(ggplot2)
-library(pdftools)
-library(huxtable)
 ```
 
 # Agenda
