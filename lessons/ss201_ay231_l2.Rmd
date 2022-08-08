@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson ##: TEMPLATE"
+subtitle: "Lesson 2: Economic Methods, Models, and Gains from Exchange"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:
@@ -141,7 +141,7 @@ Know:
 Do:     
 
 ---
-# Course Admin
+# Admin
 
 
 ---
@@ -150,9 +150,17 @@ Do:
 
 
 ---
-# Lesson Material
+# Lesson Objectives
 
+- Recognize the economists use models based on the scientific method to make predictions and that these models are simplifications of reality.
 
+- Understand the role of empirical (data) analysis in evaluating economic models and the distinction between correlation and causation.
+
+- Develop the production possibility frontier to characterize tradeoffs and opportunity cost.
+
+- Distinguish between absolute advantage and comparative advantage.
+
+- Explain how comparative advantage forms the basis for specialization and trade.
 
 ---
 # Next time...

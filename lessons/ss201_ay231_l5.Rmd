@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson ##: TEMPLATE"
+subtitle: "Lesson 5: The Market Forces of Supply and Demand"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:

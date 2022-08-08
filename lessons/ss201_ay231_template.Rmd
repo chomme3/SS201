@@ -1,6 +1,6 @@
 ---
 title: "SS201: Principles of Economics"
-subtitle: "Lesson ##: TEMPLATE"
+subtitle: "Lesson ##: BLANK"
 author: "MAJ Carson Homme"
 institute: "United States Military Academy"
 output:

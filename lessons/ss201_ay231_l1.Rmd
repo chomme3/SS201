@@ -163,7 +163,7 @@ Do:     Admin Tasks, Reading for Next Time
 - "Walk-Out" Song
 
 ---
-# Course Admin
+# Admin
 .panelset[
 .panel[.panel-name[Schedule]
 - 3 Blocks
