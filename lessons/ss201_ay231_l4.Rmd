@@ -130,9 +130,9 @@ environment(print_bib_rmd) <- asNamespace("RefManageR")
 # Agenda
 - Admin
 
-- Review
+- Review: Derive Supply Curve
 
-- 
+-  
 
 ???
 

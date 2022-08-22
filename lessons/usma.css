@@ -7,12 +7,38 @@ Updated: 5/03/2022
 /* Package defaults that we slightly tweak */
 
 .remark-slide-content {
-  font-size: 18px;
+  font-size: 24px;
   padding: 1em 4em 1em 4em;
+  line-height: 1.2em;
+  margin-top: 0em;
+}
+
+.remark-slide-content h1 {
+  font-size: 55px;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 0em;
+}
+
+.remark-slide-content h2 {
+  font-size: 45px;
+  color: #515151;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.remark-slide-content h3 {
+  font-size: 35px;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 a, a > code {
-    color: #0300cc56; /* rgb(249, 38, 114) */
+    color: #c68856; /* rgb(249, 38, 114) */
   text-decoration: none;
 }
 
@@ -64,11 +90,13 @@ a, a > code {
 .pull-left {
   float: left;
   width: 45%;
+  padding: 0em 0em 0em 0em;
 }
 
 .pull-right {
   float: right;
   width: 45%;
+  padding: 0em 0em 0em 0em;
 }
 
 .pull-right + * {
@@ -158,8 +186,14 @@ thead, tfoot, th, tr, td { background-color: #FFFFFF }
   font-size: 70%;
 }
 
+.medium {
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
 .bigger {
-  font-size: 140%;
+  font-size: 200%;
+  line-height: 1.5em;
 }
 
 /* H1 fonts */
@@ -300,13 +334,11 @@ h1 {
 }
 
 h2 {
-  color: #000000
-  margin-top: -30px;
+  color: #515151;
 }
 
 h3 {
-  color: #515151;
-  margin-top: -30px;
+  color: #c68856;
 }
 
 /* Font size tags */

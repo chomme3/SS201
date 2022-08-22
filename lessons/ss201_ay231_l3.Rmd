@@ -128,41 +128,197 @@ environment(print_bib_rmd) <- asNamespace("RefManageR")
 ```
 
 # Agenda
-- Admin
+- Admin (5 min)
 
-- Review
+- In-Class Survey (10 min)
 
-- 
+- Consumer Choice Theory
+  - Application (20 min)
+  
+  - Intuition (15 min)
+
+  - Science (20 min)
 
 ???
 
-Feel:   
-Know:   
-Do:     
+Feel:   Confident about intuition behind utility maximization
+Know:   Concept of diminishing marginal utility
+Do:     Think about how to apply income and substitution effects
 
 ---
-# Course Admin
+# Admin
 
+- Issue Analysis Essay
+  - Topic due 27SEP
+
+- PS1
+  - Cengage due NLT 07 2359 SEP
+  - Handout due in class 08SEP
+
+- Questions from last night's reading / pre-class assignment?
 
 ---
-# Review
+# Consumer Choice Theory - Application
+### More is always better?
 
+- 1 x volunteer
+- 3 x groups
+  - Group Leaders: 5, 3, 2, 1, 6
 
+.center[*Number corresponds to alphabetic order of last name in class*]
 
 ---
-# Lesson Material
+# Consumer Choice Theory - Application
+### Conclusions
 
+1. More is <u>ALWAYS</u> better. Assuming ...
 
+2. More is <u>ALWAYS</u> better, **but not as good.** 
+
+.center[**Diminishing Marginal Utility??**]
+```{r chest, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/chestnut.png")
+```
+---
+# Consumer Choice Theory - Intuition
+
+My happiness boils down to two things...
+
+- **Scarcity:** What I can afford...AKA...Budget Constraint
+
+- **Preferences:** What I want...AKA...Utility Function / Indifference Curves
+
+---
+# Consumer Choice Theory - Intuition
+## My Budget as a 2LT working Summer Training...
+.pull-left[
+### What can I afford? (Scarcity)
+
+.center[*Income*]
+Base Pay = $3,477.30
+
+USMA BAH = $2,118.00
+
+.center[*Deductions*]
+
+Taxes/SGLI (15%) = $839.30
+
+.center[**Take Home Pay**]
+
+.center[
+$4,756
+]
+]
+
+.pull-right[
+### Monthly Budget
+
+|     Item                    | Amount      |
+|-----------------------------|-------------|
+|     Cow Loan                |     $756    |
+|     Rent                    |     $1,250  |
+|     Utilities               |     $300    |
+|     Savings (20%)           |     $1,000  |
+|     Food                    |     $750    |
+|     Gas                     |     $200    |
+|     Entertainment           |     $500    |
+| **TOTAL**                   | **$4,756**  |
+]
+---
+# Consumer Choice Theory - Intuition
+.pull-left[
+### Monthly Budget
+
+|     Item                    | Amount      |
+|-----------------------------|-------------|
+|     Cow Loan                |     $756    |
+|     Rent                    |     $1,250  |
+|     Utilities               |     $300    |
+|     Savings (20%)           |     $1,000  |
+|     Food                    |     $750    |
+|     Gas                     |     $200    |
+|     Entertainment           |     $500    |
+| **TOTAL**                   | **$4,756**  |
+]
+
+.pull-right[
+### Dinner Decisions
+
+Two choices, assume you value both the same...
+
+  1. Carne Asada Burrito
+  
+  2. Chicken, Bacon Sensation 
+  
+How does your spending change if...
+- the price of beef doubles?
+
+- your income doubles?
+
+- income and both goods increase by 10%?
+]
+
+---
+# Consumer Choice Theory - Science
+
+.pull-left[
+### Monthly Budget
+|     Item                    | Amount      |
+|-----------------------------|-------------|
+|     Cow Loan                |     $756    |
+|     Rent                    |     $1,250  |
+|     Utilities               |     $300    |
+|     Savings (20%)           |     $1,000  |
+|     Food                    |     $750    |
+|     Gas                     |     $200    |
+|     Entertainment           |     $500    |
+| **TOTAL**                   | **$4,756**  |
+]
+
+.pull-right[
+###Budget Constraint
+$$I = p_1 x_1 + p_2 x_2$$
+]
+</br></br>
+.pull-left[
+### Dinner Decisions
+
+Burrito vs. Sandwich
+]
+
+.pull-right[
+###Utility Function
+$$U(x_1, x_2) = x_1^{\frac{1}{2}}x_2^{\frac{1}{2}}$$
+]
+
+---
+# Consumer Choice Theory - Science
+## Deriving the Demand Curve
+
+.pull-left[
+### Assumptions
+Preferences are <u>Complete</u>
+- An agent can compare any two things within a set
+  
+Preferences are <u>Transitive</u>
+- If $A>B$ and $B>C$, then $A>C$
+]
+
+.pull-right[
+###Budget Constraint
+$$I = p_1 x_1 + p_2 x_2$$
+
+###Utility Function
+$$U(x_1, x_2) = x_1^{\frac{1}{2}}x_2^{\frac{1}{2}}$$
+]
+
+.center[
+Let's maximize $U(x_1, x_2)$  $s.t.$  $I = p_1 x_1 + p_2 x_2$
+]
 
 ---
 # Next time...
 
----
-# References
-```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(bib)
-```
+We'll derive the supply curve
 
----
-# Audiovisual
-
+Talk through different types of goods
