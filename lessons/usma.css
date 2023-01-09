@@ -8,7 +8,7 @@ Updated: 5/03/2022
 
 .remark-slide-content {
   font-size: 24px;
-  padding: 1em 4em 1em 4em;
+  padding: 2em 2em 2em 2em;
   line-height: 1.2em;
   margin-top: 0em;
 }
@@ -17,6 +17,7 @@ Updated: 5/03/2022
   font-size: 55px;
   line-height: 1em;
   padding: 0em 0em 0em 0em;
+  margin-top: 0em;
   margin-bottom: 0em;
 }
 
@@ -35,6 +36,14 @@ Updated: 5/03/2022
   padding: 0em 0em 0em 0em;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.remark-slide-content ul {
+  margin: 0px 0px 0px 0px;
+}
+
+.remark-slide-content p {
+  margin-block-end: 0em;
 }
 
 a, a > code {
@@ -70,21 +79,17 @@ a, a > code {
 
 /* Two-column layout (slightly wider for aspect ration) */
 .left-column {
-  color: #777;
-  width: 25%;
+  width: 75%;
   height: 92%;
   float: left;
 }
 
-.left-column h2:last-of-type, .left-column h3:last-child {
-  color: #000;
-}
 
 /* slightly thiner to suppor aspect ration */
 .right-column {
-  width: 70%;
+  width: 25%;
+  height: 92%;
   float: right;
-  padding-top: 1em;
 }
 
 .pull-left {
