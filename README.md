@@ -9,7 +9,7 @@ The slides below are best viewed in HTML; however, I have also posted pdf copies
 
 ## Lessons
 
-1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l1.Rmd)\]
+1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.Rmd)\]
 
 2. Economic Methods, Models, and Gains from Exchange
 
