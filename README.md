@@ -11,7 +11,7 @@ The slides below are best viewed in HTML; however, I have also posted pdf copies
 
 1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.Rmd)\]
 
-2. Economic Methods, Models, and Gains from Exchange
+2. Economic Methods, Models, and Gains from Exchange [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.Rmd)\]
 
 3. Consumer Choice Theory
 
