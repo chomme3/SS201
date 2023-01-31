@@ -114,7 +114,7 @@ Clarke can produce either 50 toy sharks or 25 spider-man masks. Cal can produce 
 \pagebreak
 
 # Bottom Line Up Front {#sec:bluf}
-Demand curves come from exogenous price changes, and consumers re-optimizing their bundle. Consumers might buy less, more, or switch to a different good. Within this re-optimization, there are two competing effects which take place: the income and substitution effects. We use these two concepts to explain why consumers react to price changes.
+Demand curves come from exogenous price changes, and consumers re-optimizing their bundle. Consumers might buy less, more, or switch to a different good. Within this re-optimization, there are two competing effects which take place: the income and substitution effects. We use these two concepts to explain how consumers react to price changes.
 
 # Income and Substitution Effects {#sec:inc}
 \begin{minipage}[t]{0.45\textwidth}
@@ -125,7 +125,7 @@ Demand curves come from exogenous price changes, and consumers re-optimizing the
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \vspace{0pt}
-    Meet our new friend Brennan Huff. He has been told by some that "He is the song-bird of his generation," with his voice sounding like a mix between Fergie and Jesus. As such, Brennan loves purchasing digital music and kites. Similar to our old pal Lawrence, Brennan does not view kites and music as perfect substitutes or complements, but values them similarly. 
+    Meet our new friend Brennan Huff. He has been told by some that he is the ``song-bird of his generation," with his voice sounding something like a mix between Fergie and Jesus. As such, Brennan loves purchasing digital music and kites. Similar to our old pal Lawrence, Brennan does not view kites and music as perfect substitutes or complements, but values them similarly. 
 \end{minipage}
 
 Below is a graph of Brennan's indifference curves, his budget constraint, and his optimal bundle. His mom is a total enabler and gives him an allowance of \$100 a week. Let us assume that on average, each music purchase Brennan makes costs \$5 and that he only prefers dollar-store kites, so these cost \$1.
@@ -146,9 +146,9 @@ knitr::include_graphics("img/brennan_ic.png")
 
 4. Now as we all know, Brennan's mom is an enabler and not an SS201 graduate. She cannot stand to see her baby not as happy as he was before. She knows you are at West Point taking economics and asks for your help. She wants to know how much she would have to increase his allowance by for him to be just as happy as he was before the price change.
 
-    a. First, draw the point at which Lawrence would be just as happy as before the price change. (Hint: Find this point after looking at the new budget constraint. The slope of this new budget constraint does not change.)
+    a. First, draw the point at which Brennan would be just as happy as before the price change. (Hint: Find this point after looking at the new budget constraint. The slope of this new budget constraint does not change.)
   
-    b. Second, draw the "compensated" budget constraint and approximate how much more money Lawrence's parents will have to give him to compensate.
+    b. Second, draw the "compensated" budget constraint and approximate how much more money Brennan's parents will have to give him to compensate.
 
 ```{r brenan_ic2, out.width='70%', fig.align='left'}
 knitr::include_graphics("img/brennan_ic2.png")
@@ -180,10 +180,10 @@ The model used in consumer choice theory is applied throughout economics. It is 
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \vspace{0pt}
-  To look at this problem, we are going to need to bring in Dale, Brennan's step-brother. Together, they both own a karaoke business, "Prestige Worldwide," which they provide their services to local bars, restaurants, and other commercial parties. We will now model the labor-leisure tradeoff decision that each faces given a change in the wage.
+  To look at this problem, we are going to need to bring in Dale, Brennan's step-brother. Together, they both own a karaoke business, ``Prestige Worldwide," which they provide their services to local bars, restaurants, and other commercial parties. We will now model the labor-leisure tradeoff decision that each faces given a change in the wage.
 \end{minipage}
 
-Formally, each agent is seeking to maximize $U(C, L)$ subject to the budget constraint $wh \geq C + R$ where $C$ is consumption, $L$ is hours of leisure, $w$ is the wage, $h$ the number of hours worked and $R$ as the money some one might earn outside the labor market (i.e. investments, transfer payments, etc.). To get our budget constraint in terms of leisure, we will substitute the identity $h = L_0-L$ in for $h$ and rewrite $R_0 = wL_0 + R$.
+Formally, each agent is seeking to maximize $U(C, L)$ subject to the budget constraint $wh \geq C + R$ where $C$ is consumption, $L$ is hours of leisure, $w$ is the wage, $h$ the number of hours worked and $R$ as the money some one might earn outside the labor market (i.e. investments, transfer payments, etc.). To get our budget constraint in terms of leisure, we will substitute the identity $h = L_0-L$ in for $h$ and rewrite $R_0 = wL_0 + R$. In this instance, $L_0$ is the total amount of hours available for either labor or leisure.
 
 Thus, where before consumers were maximizing $U(x_1, x_2)$  $s.t.$   $I \geq p_1 x_1 + p_2 x_2$, now we have just changed the "goods" inside our utility function and laborers are now maximizing $U(C,L)$  $s.t.$  $C + wL \leq R_0$.
 

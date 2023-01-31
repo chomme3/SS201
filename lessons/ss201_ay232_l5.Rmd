@@ -1,0 +1,233 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: AY 23-2
+
+bibliography: references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+    toc: false
+    number_sections: true
+  geometry: margin=1in
+  fontsize: 11pt
+  compact-title: true
+header-includes: 
+  \usepackage{booktabs}
+  \usepackage{tabularx}
+  \usepackage{threeparttable}
+  \usepackage{bm}
+  \DeclareMathOperator{\Var}{Var}
+  \usepackage{dcolumn}
+  \usepackage{changepage}
+  \usepackage{multirow}
+  \usepackage[normalem]{ulem}
+  \useunder{\uline}{\ul}{}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \AtBeginDocument{\let\maketitle\relax}
+  
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+
+\fancyhf{}
+\begin{center}
+    \Large
+    \textbf{
+    \textit{SS201: Principles of Economics} \\ 
+    AY 23-2 \\ 
+    }
+    Lesson 5: The Market Forces of Supply and Demand
+\end{center}
+\fancyfoot[C]{\thepage}
+
+# Review {#sec:review}
+
+For each question below, select either True, False, or Uncertain. Then in the space provided, briefly justify your answer (one or two sentences maximum).
+
+
+\begin{center}
+True \hspace{3cm} False \hspace{3cm} Uncertain
+\end{center}
+
+1. If the price of a good rises, consumers will buy less of it. 
+
+  \vspace{3cm}
+
+\begin{center}
+True \hspace{3cm} False \hspace{3cm} Uncertain
+\end{center}
+
+2. Clarke can make more lego spaceships using fewer inputs than Cal. Clarke has the comparative advantage at making this good. 
+
+  \vspace{3cm}
+
+\begin{center}
+True \hspace{3cm} False \hspace{3cm} Uncertain
+\end{center}
+
+3. The concept of diminishing marginal utility explains how more is not always better.  
+
+  \vspace{3cm}
+
+\pagebreak
+
+# Bottom Line Up Front {#sec:bluf}
+Comparative advantage and differing opportunity costs explain why individuals would want to trade and how they can become better off. Consumer Choice Theory models how individuals make choices to optimize their happiness with scarce resources. Markets are now the central force which harnesses the two models above so that a heterogeneous group of individuals can trade goods to optimize their happiness. We will build a simple model that has surprisingly powerful predictive capability.
+
+# Let's play a little game! {#sec:game}
+
+```{r game, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/game.jpg")
+```
+
+Before we get into the lesson, we are going to set up and play around in a perfectly competitive market for maple syrup. Some people will be buyers, and the rest will be sellers. I will now give each buyer and seller a numbered playing card. Some cards have been removed from the deck(s), and all remaining cards have a number. Please hold your card so that others do not see the number. The *buyers* cards are *black (clubs or spades)*, and the *sellers* cards are *red (hearts or diamonds)*. Each card represents one "unit" of an unspecified commodity that can be bought by buyers or sold by sellers. 
+
+**Sellers**: You can each sell a single unit of the commodity during a trading period. You are not required to sell. The number on your card is the dollar cost that you incur if you make a sale. You will be required to sell at a price that is no lower than the cost number on the card. Your earnings on the sale are calculated as the difference between the price that you negotiate and the cost number on the card. If you do not make a sale, you do not earn anything or incur any cost in that period. Suppose that your card is a 2 of diamonds and you negotiate a sale price of $3.50. Then you would earn: $3.50 - $2 = $1.50. You would not be allowed to sell at a price below $2 with this card (2 of diamonds). If you mistakenly agree to a price that is below your cost, then the trade will be invalidated when you come to the front desk.
+
+**Buyers**: You can each buy a single unit of the commodity during a trading period. You are not required to buy.  The number on your card is your valuation (in dollars) of one unit of the good.  You cannot purchase more than one unit of the good.  You will be required to buy at a price that is no higher than the value number on the card. Your earnings on the purchase are calculated as the difference between the value number on the card and the price that you negotiate. If you do not make a purchase, you do not earn anything in the period. Suppose that your card is a 9 of Clubs and you negotiate a purchase price of $4. Then you would earn: $9 - $4 = $5. You would not be allowed to buy at a price above $9 with this card (9 of Clubs). If you mistakenly agree to a price that is above your value, then the trade will be invalidated when you come to the front desk.
+
+**Trading**: Buyers and sellers will meet in the center of the room and negotiate during a 2-minute, public (pit-market) trading period. Prices must be multiples of 50 cents. When a buyer and a seller agree on a price, they will come together to the front of the room to report the price, which will be announced to all and recorded on the blackboard. Then, the buyer and seller will turn in their cards, return to their original seats, and wait for the trading period to end. There will be several market periods.
+
+**Recording Earnings**: Some sellers with high costs and some buyers with low values may not be able to negotiate a trade, but do not be discouraged since new cards will be passed out at the beginning of the next period. Remember that earnings are zero for any unit not bought or sold (sellers incur no cost and buyers receive no value). When the period ends, I will collect cards for the units not traded, and you can calculate your earnings while I shuffle and redistribute the cards. Your total earnings equal the sum of your earnings in each period (value – sale price for buyers; sale price – cost for sellers).  Please record your earnings in each round below:
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Round & Buyer or Seller & Valuation / Cost & Sale Price & Earnings \\
+\hline
+1 & & & & \\
+\hline
+2 & & & & \\
+\hline
+3 & & & & \\
+\hline
+4 & & & & \\
+\hline
+5 & & & & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Now that we've played the game, let's model it. Plot the supply and demand curves below and the prices at which trades took place each period.
+
+```{r g1, out.width='50%', fig.align='center'}
+knitr::include_graphics("img/grid.png")
+```
+
+\pagebreak
+
+# Competitive Markets (Perfect Competition) {#sec:markets}
+
+\begin{minipage}[t]{0.45\textwidth}
+    \vspace{0pt}
+    \centering
+    \includegraphics[width=.60\linewidth]{img/vince.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+  Mediator Jeremy Gray claims to love maple syrup. In fact, he knows everything there is to know about maple syrup. He loves it on pancakes! He loves it on pizza! He even loves to take maple syrup and put a little bit in his hair when he is having a rough week. Some times he even claims that he could fool people into believing that he's the head of an emerging maple syrup conglomerate. Jeremy claims that because the market for maple syrup is perfectly competitive market that it's no problem to understand.
+\end{minipage}
+
+1. Let's assume that Jeremy is correct in his assumption about maple syrup. What are the characteristics of these markets? These are the assumptions that will define the relationship between buyers and sellers.
+\vspace{3cm}
+
+2. Classify the following goods as ones that are found in a competitive (perfect) market, or another type (we will classify these types later):
+
+    a. Sugar \vspace{.4cm}
+    
+    b. Louis Vatton Hand Bags \vspace{.4cm}
+    
+    c. White socks \vspace{.4cm}
+    
+    d. Fast Food Cheeseburgers \vspace{.4cm}
+    
+    e. Apples \vspace{.4cm}
+    
+\pagebreak
+
+# Demand {#sec:demand}
+
+```{r sis, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/clearysis.png")
+```
+
+Now let's talk about the **DEMAND** for maple syrup. The Cleary sisters, Gloria and Claire, have the demand schedules for quarts of maple syrup listed below.
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Price ($P$) & Gloria's $Q_d$ & Claire's $Q_d$: $Q_d = 13 - 2P$ \\
+\hline
+2 & 4 &  \\
+\hline
+4 & 3 &  \\
+\hline
+6 & 2 &  \\
+\hline
+8 & 1 &  \\
+\hline
+10 & 0 &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+1. Fill in Claire's Demand Schedule
+
+2. What is Gloria's willingness to pay for her first quart of maple syrup? What about for two quarts of maple syrup? Why are these different? \vspace{3cm}
+
+3. Why does Gloria’s individual demand curve slope downward? What is the Law of Demand? \vspace{3cm}
+
+4. What is the equation for Gloria's Demand Curve ($Q_d$?) \vspace{3cm}
+
+5. Gloria is kind of a clinger, and just will not let you go after you start talking with her. She just keeps rattling on about how the market for maple syrup has been changing. You being in SS201, just loving economics, and having learned how to model demand and where it comes from, just can't help but start to imagine what's actually happening to the curve as Gloria discusses the shocks. List below for each shock what happens to the demand curve.
+
+    a. The price of honey decreases.  \vspace{1cm}
+    b. The price of pancakes skyrockets!  \vspace{1cm}
+    c. New York just instituted a mandatory pancake breakfast the fourth Monday of every month.  \vspace{1cm}
+    d. The government just announced another stimulus plan for all citizens. \vspace{1cm}
+
+\pagebreak
+
+# Supply {#sec:supply}
+
+1. Now let's talk about the other half of our market, and the **SUPPLY** for maple syrup. Suppose that the supply curve for maple syrup in New York is $Q_s = -1000 + 500 P_s$. Plot the supply curve below with price on the vertical axis and quantity on the horizontal axis.
+```{r g3, out.width='50%', fig.align='left'}
+knitr::include_graphics("img/grid.png")
+```
+      
+2. Why does the supply curve slope upward? What is the Law of Supply? \vspace{3cm}
+
+3. List four different supply shifters and give examples for how these would apply for the market for maple syrup.

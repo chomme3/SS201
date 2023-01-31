@@ -140,9 +140,10 @@ You (should) make decisions based off two criteria:
 - Preferences: What you enjoy and makes you happiest, or what brings you the most "utility."
 
 - Scarcity: What is available and what you can afford.
+
 \begin{center}
-  *The best decisions evaluate tradeoffs at the margin. These decisions allocate where you should spend your next     dollar or minute of your time.*
-\end{Center}
+  \textit{The best decisions evaluate tradeoffs at the margin. These decisions allocate where you should spend your next     dollar or minute of your time.}
+\end{center}
 
 ## Preferences - The Utility Function {#sec:pref}
 \begin{minipage}[t]{0.45\textwidth}
