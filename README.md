@@ -5,17 +5,19 @@
 ## Overview
 This is an undergraduate economics course taught at the United States Military Academy at West Point. Please see the [syllabus](https://raw.githack.com/chomme3/SS201/main/admin/AY_23-2_SS201_Syllabus.pdf) and [course overview](https://raw.githack.com/chomme3/SS201/main/admin/AY_23-2_SS201_Schedule.pdf) for more information.
 
+The textbook used for this course is Mankiw's *Principles of Economics*, Ninth Edition. Cengage Learning, 2020.
+
 The slides below are best viewed in HTML; however, I have also posted pdf copies for download so cadets may take notes or fill out during the lesson. I will not post solutions to board problems given in the slides, that's what class is for!
 
-## Lessons
+## Lesson Material
 
 1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.Rmd)\]
 
 2. Economic Methods, Models, and Gains from Exchange \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.Rmd)\]
 
-3. Consumer Choice Theory
+3. Consumer Choice Theory I  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l3.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l3.Rmd)\]
 
-4. Consumer Choice Theory Application
+4. Consumer Choice Theory II  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l4.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l4.Rmd)\]
 
 5. The Market Forces of Supply and Demand
 
@@ -70,4 +72,4 @@ The slides below are best viewed in HTML; however, I have also posted pdf copies
 30. Frontiers in Economics
 
 ## Acknowledgments
-I am deeply indebted to [Grand McDermott](https://grantmcdermott.com/) at the University of Oregon for his work within R and overall course structure on github. I modeled this repository based off his work.
+I am deeply indebted to [Grand McDermott](https://grantmcdermott.com/) at the University of Oregon for his work within R, and overall course structure on github. I modeled this repository based off his work.
