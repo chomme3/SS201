@@ -19,11 +19,11 @@ The slides below are best viewed in HTML; however, I have also posted pdf copies
 
 4. Consumer Choice Theory II  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l4.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l4.Rmd)\]
 
-5. The Market Forces of Supply and Demand
+5. The Market Forces of Supply and Demand  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l5.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l5.Rmd)\]
 
-6. Market Equilibrium
+6. Market Equilibrium  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l6.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l6.Rmd)\]
 
-7. Elasticity
+7. Elasticity  \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l7.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l7.Rmd)\]
 
 8. Economic Welfare and Government Intervention
 
