@@ -10,6 +10,9 @@
 *.db
 *.ini
 *.Rproj
+*.aux
+*.log
+*.out
 
 desktop.ini
 *.ini

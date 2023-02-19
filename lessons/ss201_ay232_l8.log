@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.1.30)  30 JAN 2023 14:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.1.30)  1 FEB 2023 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,67 +880,76 @@ Package hyperref Info: Link coloring OFF on input line 92.
 \@outlinefile=\write3
 \openout3 = `ss201_ay232_l8.out'.
 
-[1
-
-]
+File: img/util_review.png Graphic file (type bmp)
+<img/util_review.png>
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 204.
+(Font)              scaled to size 7.0pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 204.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 204.
+(Font)              scaled to size 5.0pt on input line 172.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 172.
 (c:/Users/carson.homme/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 204.
+(Font)              scaled to size 10.00092pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 204.
+(Font)              scaled to size 7.00064pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 204.
+(Font)              scaled to size 5.00046pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 204.
+(Font)              scaled to size 9.99893pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 204.
+(Font)              scaled to size 6.99925pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 204.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 204.
+(Font)              scaled to size 4.99947pt on input line 172.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172.
 (c:/Users/carson.homme/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 204.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172.
 (c:/Users/carson.homme/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 204.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 172.
 (c:/Users/carson.homme/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 204.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 172.
 (c:/Users/carson.homme/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-File: img/squints.jpg Graphic file (type bmp)
-<img/squints.jpg>
+) [1
+
+]
+File: img/andy.jpg Graphic file (type bmp)
+<img/andy.jpg>
+File: img/grid.png Graphic file (type bmp)
+<img/grid.png>
 [2]
-File: img/elast.png Graphic file (type bmp)
-<img/elast.png>
+File: img/brooks.jpg Graphic file (type bmp)
+<img/brooks.jpg>
+File: img/grid.png Graphic file (type bmp)
+<img/grid.png>
 [3]
-File: img/elast_slope.png Graphic file (type bmp)
-<img/elast_slope.png>
+File: img/tommy.jpg Graphic file (type bmp)
+<img/tommy.jpg>
+File: img/grid.png Graphic file (type bmp)
+<img/grid.png>
 [4]
-File: img/wendy.jpg Graphic file (type bmp)
-<img/wendy.jpg>
-[5] [6] (./ss201_ay232_l8.aux)
+File: img/mw_jobs.png Graphic file (type bmp)
+<img/mw_jobs.png>
+File: img/mw_pov.jpg Graphic file (type bmp)
+<img/mw_pov.jpg>
+[5] (./ss201_ay232_l8.aux)
 Package rerunfilecheck Info: File `ss201_ay232_l8.out' has not changed.
-(rerunfilecheck)             Checksum: D7FE3DD7D914F337100D8A4FB9E83C78;585.
+(rerunfilecheck)             Checksum: 527B6FE21F06DE8FB82F86840964B746;932.
  ) 
 Here is how much of TeX's memory you used:
- 19035 strings out of 478723
- 351911 string characters out of 5847800
- 1853960 words of memory out of 5000000
- 38811 multiletter control sequences out of 15000+600000
- 526679 words of font info for 69 fonts, out of 8000000 for 9000
+ 19092 strings out of 478723
+ 352910 string characters out of 5847800
+ 1855960 words of memory out of 5000000
+ 38862 multiletter control sequences out of 15000+600000
+ 526695 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,5n,121p,506b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,5n,121p,506b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ss201_ay232_l8.pdf (6 pages).
+Output written on ss201_ay232_l8.pdf (5 pages).
