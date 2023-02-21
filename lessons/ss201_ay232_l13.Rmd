@@ -209,7 +209,7 @@ $$Q_{SMC} = 40P - 520$$
     d. Social Marginal Benefit Curve
     e. Deadweight Loss
 
-$$Q_D = 4P-140$$
+$$Q_D = -4P+140$$
 $$Q_s = 25P-150$$
 
 ```{r g3, out.width='50%', fig.align='left'}
