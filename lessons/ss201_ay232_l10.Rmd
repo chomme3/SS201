@@ -107,8 +107,6 @@ Indicate the answer choice that best completes the statement or answers the ques
 
 \pagebreak
 
-\pagebreak
-
 # Bottom Line Up Front {#sec:bluf}
 Everyone does not benefit from trade. Our model predicts definite winners and losers. For policy and decision-makers, knowing who these agents are and the relative magnitudes are critical for effective decision-making.
 
