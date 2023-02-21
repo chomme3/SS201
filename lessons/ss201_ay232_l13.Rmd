@@ -82,32 +82,32 @@ knitr::include_graphics("img/sandd.png")
 
 \hspace{0.5cm}  \begin{minipage}[t]{0.45\textwidth}
     \vspace{0pt}
-1. Given a world price of $C$, consumer surplus is represented by the expression:
+1. Given a world price of $D$, consumer surplus is represented by the expression:
     \begin{enumerate}
         \item $\frac{1}{2}CX$
-        \item $\frac{1}{2}(A-C)Y$
-        \item $\frac{1}{2}(A-E)Z$
-        \item $\frac{1}{2}(A-C)X$
+        \item $\frac{1}{2}(A-C)W$
+        \item $\frac{1}{2}(A-D)X$
+        \item $\frac{1}{2}(A-E)Y$
     \end{enumerate}
 \vspace{0.5cm}
 
-2. Given a tax of $(B-E)$, the deadweight loss is represented by the expression
+2. Given a tax of $(B-F)$, the deadweight loss is represented by the expression
     \begin{enumerate}
         \item $\frac{1}{2}(C-F)X$
-        \item $(\frac{(B-C)+(A-C)}{2})V$
+        \item $(\frac{(B-F)+(A-G)}{2})V$
         \item $(\frac{(C-E)+(C-F)}{2})V$
-        \item $\frac{1}{2}(B-E)(X-V)$
+        \item $\frac{1}{2}(B-F)(X-V)$
     \end{enumerate}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
     \vspace{0pt}
-3. Given a tax of $(B-E)$, the producer surplus is represented by the expression
+3. Given a tax of $(B-F)$, the total market surplus is represented by the expression
     \begin{enumerate}
         \item $\frac{1}{2}(C-F)X$
-        \item $(\frac{(B-C)+(A-C)}{2})V$
+        \item $(\frac{(B-F)+(A-G)}{2})V$
         \item $(\frac{(C-E)+(C-F)}{2})V$
-        \item $\frac{1}{2}(B-E)(X-V)$
+        \item $\frac{1}{2}(B-F)(X-V)$
     \end{enumerate}
 \vspace{0.5cm}
 
