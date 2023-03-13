@@ -1,7 +1,7 @@
 # Pre Requisites
 {
   if (!require(pacman)) install.packages('pacman', repos = 'https://cran.rstudio.com')
-  pacman::p_load(tidyverse, data.table, here)
+  pacman::p_load(tidyverse, data.table, here, xaringan, rmarkdown, icons)
   here()
 }
 

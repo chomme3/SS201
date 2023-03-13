@@ -115,7 +115,7 @@ True \hspace{3cm} False \hspace{3cm} Uncertain
 \pagebreak
 
 # Bottom Line Up Front {#sec:bluf}
-Markets do not do well at allocating goods without prices. Without prices, goods are abused, overused, and under-provided. Governments, in these instances, can enforce property rights, allocate prices, and help improve market efficiency and allocation of these goods.
+Economists look at costs differently. There are implicit, and explicit which inform how decisions bring about economic versus accounting profit. This lesson focuses on a firm’s costs and provides a foundation for how they model their cost structure.
 
 # A Marginal Product of Labor Game {#sec:intuitx}
 
