@@ -1,7 +1,15 @@
 # Pre Requisites
 {
   if (!require(pacman)) install.packages('pacman', repos = 'https://cran.rstudio.com')
-  pacman::p_load(tidyverse, data.table, here, xaringan, rmarkdown, icons)
+  pacman::p_load(tidyverse, 
+                 data.table, 
+                 here, 
+                 xaringan, 
+                 rmarkdown,
+                 kableExtra,
+                 tinytex)
+  tinytex::install_tinytex()
+  remotes::install_github("mitchelloharawild/icons")
   here()
 }
 
@@ -11,10 +19,10 @@
   df = data.frame(x)
   
   ggplot(df, aes(x)) +
-    stat_function(fun = function(x) -(x-7)^2+7, color = 'gold', size = 2) +
-    stat_function(fun = function(x) 2/3*x + (5/3), color = 'black', size = 2) +
+    stat_function(fun = function(x) ((x^2-6*x+14)/x), color = 'black', size = 1) +
     labs(x = "X", y = "f(x)") +
-    xlim(4,10) + ylim(0,8) +
+    xlim(0,20) + ylim(0,20) +
+    coord_fixed() +
     theme(axis.title.y.left = element_text(angle = 0, vjust = 0.5),
           axis.title.y.right = element_text(angle = 0, vjust = 0.5),
           panel.grid.major = element_blank(),
