@@ -7,8 +7,6 @@ This is an undergraduate economics course taught at the United States Military A
 
 The textbook used for this course is Mankiw's *Principles of Economics*, Ninth Edition. Cengage Learning, 2020.
 
-The slides below are best viewed in HTML; however, I have also posted pdf copies for download so cadets may take notes or fill out during the lesson. I will not post solutions to board problems given in the slides, that's what class is for!
-
 ## Lesson Material
 
 1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.Rmd)\]
