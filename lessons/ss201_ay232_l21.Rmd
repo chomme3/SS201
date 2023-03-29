@@ -1,0 +1,196 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: AY 23-2
+
+bibliography: references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+    toc: false
+    number_sections: true
+  geometry: margin=1in
+  fontsize: 11pt
+  compact-title: true
+header-includes: 
+  \usepackage{booktabs}
+  \usepackage{tabularx}
+  \usepackage{threeparttable}
+  \usepackage{bm}
+  \DeclareMathOperator{\Var}{Var}
+  \usepackage{dcolumn}
+  \usepackage{changepage}
+  \usepackage{multirow}
+  \usepackage[normalem]{ulem}
+  \useunder{\uline}{\ul}{}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage[utf8]{inputenc}
+  \AtBeginDocument{\let\maketitle\relax}
+  \usepackage{enumitem}
+  \setlist[enumerate]{nosep}
+  \renewcommand{\labelenumi}{\alph{enumi})}
+  \usepackage{array}
+  \usepackage{tabularray}
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+  
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+
+\fancyhf{}
+\begin{center}
+    \Large
+    \textbf{
+    \textit{SS201: Principles of Economics} \\ 
+    AY 23-2 \\ 
+    }
+    Lesson 21: Long Run Economic Growth
+\end{center}
+\fancyfoot[C]{\thepage}
+
+# Review {#sec:review}
+1. Which of the following statements is true?
+    a. When a competitive firm sells an additional unit of output, its revenue increases by an amount less than the price.
+    b. Average revenue is the same as price for monopoly firms but not competitive firms.
+    c. Average revenue is the same as price for competitive firms but not monopoly firms.
+    d. When a monopoly firm sells an additional unit of output, its revenue increases by an amount less than the price.
+
+
+\vspace{0.5cm}
+
+2. Which of the following conditions is characteristic of a monopolistically competitive firm in short-run equilibrium?
+    a. MR > MC
+    b. P < MC
+    c. P < ATC
+    d. P > MC
+
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tblr}{
+  colspec = {X[c]X[c]X[c]},
+  hlines = {1pt},
+  vlines = {1pt},
+  columns = {20mm}
+}
+ Quantity (Gallons)  & Price (Dollars per Gallon) & Total Revenue (Dollars) \\
+0 & 8 & 0\\
+50	& 7 & 350 \\
+100 & 6 & 600 \\
+150 & 5 & 750 \\
+200 & 4 & 800 \\
+250 & 3 & 750 \\
+300 & 2 & 600 \\
+350 & 1 & 350 \\
+400 & 0 & 0 \\
+\end{tblr}
+\end{center}
+
+3. The table above shows the town of Driveaway's demand schedule for gasoline. Assume the town's gasoline seller(s) incurs a cost of $2 for each gallon sold, with no fixed cost. If there are exactly two sellers of gasoline in Driveaway and if they collude, then which of the following outcomes is most likely?
+    a. Each seller will sell 50 gallons and charge a price of $7.
+    b. Each seller will sell 75 gallons and charge a price of $2.50.
+    c. Each seller will sell 75 gallons and charge a price of $5.
+    d. Each seller will sell 100 gallons and charge a price of $4.
+
+\pagebreak
+
+4. Which of the following events would cause the price of oranges to fall?
+    a. The price of land throughout Florida decreases, and Florida produces a significant proportion of the nation's oranges.
+    b. There is a shortage of oranges.
+    c. The FDA announces that bananas cause strokes, and oranges and bananas are substitutes.
+    d. At the current price, quantity demanded is greater than quantity supplied.
+
+\vspace{0.5cm}
+
+5. Metta says that she will spend exactly $25 each month on new apps for her mobile device, regardless of the price of apps. Metta's demand for apps is
+    a. perfectly inelastic.
+    b. unit elastic.
+    c. perfectly elastic.
+    d. somewhat inelastic, but not perfectly inelastic.
+
+\vspace{0.5cm}
+
+6. What will happen to the equilibrium price and quantity of new cars if the price of gasoline rises, the price of steel rises, public transportation becomes cheaper and more comfortable, and auto-workers negotiate higher wages?
+    a. Price will fall, and the effect on quantity is ambiguous.
+    b. Price will rise, and the effect on quantity is ambiguous.
+    c. Quantity will fall, and the effect on price is ambiguous.
+    d. Quantity will rise, and the effect on price is ambiguous.
+
+\vspace{0.5cm}
+
+7. The market supply curve
+   	a. represents the sum of the prices that all the sellers are willing to accept for a given quantity of the good.
+   	b. shows how supply changes when consumer income changes.
+   	c. is determined by finding the average quantity supplied by sellers at each possible price.
+   	d. shows how the total quantity supplied of a good varies as the price of that good varies.
+
+\vspace{0.5cm}
+
+8. Two goods are substitutes when a decrease in the price of one good
+   	a. decreases the demand for the other good.
+   	b. increases the demand for the other good.
+   	c. decreases the quantity demanded of the other good.
+   	d. increases the quantity demanded of the other good.
+
+\vspace{0.5cm}
+
+9. Both Diana and Sarah like Classical music and music by Beyoncé. Diana likes music by Beyoncé much better than Classical music, whereas Sarah prefers Classical music to music by Beyoncé. If we were to graph an indifference curve with CDs by Beyoncé on the horizontal axis and Classical music CDs on the vertical axis, then
+   	a. Sarah's indifference curve would be steeper than Diana's indifference curve.
+   	b. Diana's indifference curve would be steeper than Sarah's indifference curve.
+   	c. Diana and Sarah would have identical indifference curves.
+   	d. We do not have enough information to compare their indifference curves.
+
+\vspace{0.5cm}
+
+10. The law of supply states that, other things equal, when the price of a good
+   	a. rises, the supply of the good falls.
+   	b. rises, the quantity supplied of the good rises.
+   	c. falls, the quantity supplied of the good rises.
+   	d. falls, the supply of the good rises.
+
+\pagebreak
+
+# Bottom Line Up Front {#sec:bluf}
+There are many ways and pathways which economies grow. Economic growth leads to higher standards of living, but a large economy does not always imply the nation is best off. Real GDP is a measure that economists use to measure the “welfare” of the larger economy.
+
+# Growth Rates {#sec:growth}
+1. What’s an expression to calculate a fixed percent growth over time? \vspace{3cm}
+2. Real GDP per capita in the US economy has grown at close to 2% for almost 150 years. If it grows at 2% per year and is currently at $60,000, what will real GDP per capita be in 10 years? \vspace{3cm}
+3. At this growth rate, how long will it take for the current GDP per capita to double in size? \vspace{3cm}
+4. China’s growth rate in 1991 was 14%, how long would it take for this economy to double in size? \vspace{3cm}
+5. Suppose real GDP per capita in the US continues to grow at 2% per year. It currently has a GDP per capita of 60,000. China’s GDP per capita is 16,000. If China is to catch up with the U.S. by 2050 in 27 years, at what rate does it need to grow? \vspace{3cm}
+
+# A Nation's Production Function {#sec:solow}
+1. What's the equation for a nation's production function? Where does this model come from? What do each of the inputs represent? \vspace{3cm}
+2. Define the catch-up effect. How does this concept relate to diminishing marginal returns? \vspace{3cm}
+3. What is the main mechanism for growth within this model? \vspace{3cm}
+
