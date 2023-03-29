@@ -49,9 +49,11 @@ The slides below are best viewed in HTML; however, I have also posted pdf copies
 
 19. Written Partial Review II
 
-20. Macroeconomic Aggregates \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.Rmd)\]
+20. Macroeconomic Aggregates 
+ - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.Rmd)\]
 
-21. Long Run Economic Growth
+21. Long Run Economic Growth 
+ - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l21_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l21_slides.Rmd)\]
 
 22. Capital Markets
 
