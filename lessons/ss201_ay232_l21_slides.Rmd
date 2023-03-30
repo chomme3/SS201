@@ -170,6 +170,26 @@ knitr::include_graphics("img/gdp_life_sat.png")
 ```
 
 ---
+# Growth Matters, but Spending Isn't Everything
+
+```{r gdp_med_spend, out.width='90%', fig.align='center'}
+knitr::include_graphics("img/gdp_med_spend.png")
+```
+
+---
+# Growth Matters, but Spending Isn't Everything
+
+```{r inf_mort, out.width='90%', fig.align='center'}
+knitr::include_graphics("img/inf_mort.png")
+```
+
+---
+# Growth Matters, but Spending Isn't Everything
+
+```{r life_expec, out.width='90%', fig.align='center'}
+knitr::include_graphics("img/life_expec.png")
+```
+---
 # A Nation's Production Function
 .big[
 $$Y = A \times F(L, K, H, N) $$
