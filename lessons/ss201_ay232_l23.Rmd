@@ -1,0 +1,280 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: AY 23-2
+
+bibliography: references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+    toc: false
+    number_sections: true
+  geometry: margin=1in
+  fontsize: 11pt
+  compact-title: true
+header-includes: 
+  \usepackage{booktabs}
+  \usepackage{tabularx}
+  \usepackage{threeparttable}
+  \usepackage{bm}
+  \DeclareMathOperator{\Var}{Var}
+  \usepackage{dcolumn}
+  \usepackage{changepage}
+  \usepackage{multirow}
+  \usepackage[normalem]{ulem}
+  \useunder{\uline}{\ul}{}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage[utf8]{inputenc}
+  \AtBeginDocument{\let\maketitle\relax}
+  \usepackage{enumitem}
+  \setlist[enumerate]{nosep}
+  \renewcommand{\labelenumi}{\alph{enumi})}
+  \usepackage{array}
+  \usepackage{tabularray}
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+  
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+
+\fancyhf{}
+\begin{center}
+    \Large
+    \textbf{
+    \textit{SS201: Principles of Economics} \\ 
+    AY 23-2 \\ 
+    }
+    Lesson 22: Capital Markets II
+\end{center}
+\fancyfoot[C]{\thepage}
+
+# Review {#sec:review}
+\begin{center}
+\resizebox{0.95\textwidth}{!}{
+                \begin{tabular}{C{.02\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}}
+Q & 
+\multicolumn{1}{p{1.5cm}|}{\centering Total Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Fixed Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Variable Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Marginal Cost \\ (Dollars)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AFC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AVC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}}{\centering ATC \\ (Dollars per ride)} \\ 
+\hline
+0	& 50  & 50 & 0 & --- & --- & --- &--- \\
+\hline
+1	& 150  & A & B & C & D & E & F  \\
+\hline
+2	& G & H & I & 120 & J & K & L \\
+\hline
+3	& M & N & O & P & Q & 120 & R \\
+\end{tabular}
+}
+\end{center}
+\vspace{0.5cm}
+1. What is the value of B?
+ 	  a. 	$25
+ 	  b. 	$50
+ 	  c. 	$100
+ 	  d. 	$200
+\vspace{0.5cm}
+2. What is the value of G?
+ 	  a. 	$150
+ 	  b. 	$300
+ 	  c. 	$270
+ 	  d. 	$200
+\vspace{0.5cm}
+3. What is the value of F?
+ 	  a. 	$75
+ 	  b. 	$100
+ 	  c. 	$125
+ 	  d. 	$150
+\vspace{0.5cm}
+4. Which of the below is not a factor that affects productivity in our National Production function?
+ 	  a. 	Physical Capital
+ 	  b. 	Human Capital
+ 	  c. 	Institutions
+ 	  d. 	Labor
+
+\pagebreak
+Below is a table of Uruguay's national data for the year 2019.
+
+| Category                                        | Amount        |
+|--------------------------------------------------|:---------:|
+| Household purchases of durable goods             | $1,574  |
+| Household purchases of nondurable goods          | $1,717  |
+| Household purchases of services                  | $385    |
+| Household purchases of new housing               | $704    |
+| Purchases of capital equipment                   | $310    |
+| Inventory changes                                | $363    |
+| Purchases of new structures                      | $611    |
+| Depreciation                                     | $117    |
+| Salaries of government workers                   | $1,422  |
+| Government expenditures on public works          | $569    |
+| Transfer payments                                | $777    |
+| Foreign purchases of domestically produced goods | $88     |
+| Domestic purchases of foreign goods              | $140    |
+
+
+5. What was Uruguay's consumption in 2019?
+ 	  a. 	$1,991
+ 	  b. 	$1,988
+ 	  c. 	$3,676
+ 	  d. 	$7,603
+\vspace{0.5cm}
+6. In 2002 mortgage rates fell and mortgage lending increased. Which of the following could explain both of these changes?
+ 	  a. 	The demand for loanable funds shifted rightward.
+ 	  b. 	The demand for loanable funds shifted leftward.
+ 	  c. 	The supply of loanable funds shifted rightward.
+ 	  d. 	The supply of loanable funds shifted leftward.
+
+\vspace{0.5cm}
+
+The following table reports nominal and real GDP for the U.S. from 1929 to 1932.
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+Year & 
+\multicolumn{1}{p{3.5cm}|}{\centering Nominal GDP \\ (Billions of Dollars)} & 
+\multicolumn{1}{p{3.5cm}|}{\centering Real GDP \\ (Billions of Dollars)} \\
+\hline
+1929 &	103.6 &	977 \\
+1930 &	91.2 &	892.8 \\
+1931 &	76.5 &	834.9 \\
+1932 &	58.7 &	725.8 \\
+\end{tabular}
+\end{center}
+
+7. What are the GDP deflator and the inflation rate for 1931?
+ 	  a. 	9.16, −11.5
+ 	  b. 	9.16, −10.3
+ 	  c. 	1091.37, 10.3
+ 	  d. 	1091.37, 11.5
+
+\vspace{0.5cm}
+8. Using the midpoint method, the price elasticity of demand for a good is computed to be approximately 0.55. Which of the following events is consistent with a 20 percent decrease in the quantity of the good demanded?
+ 	  a. 	An increase of 11.0 percent in the price of the good
+ 	  b. 	An increase of 36.36 percent in the price of the good
+ 	  c. 	An increase in the price of the good from \$11.00 to \$20
+ 	  d. 	An increase in the price of the good from \$20 to \$31.00
+
+\vspace{0.5cm}
+9. If long-run average total cost decreases as the quantity of output increases, the firm is experiencing
+ 	  a. 	economies of scale.
+ 	  b. 	diseconomies of scale.
+ 	  c. 	coordination problems arising from the large size of the firm.
+ 	  d. 	fixed costs greatly exceeding variable costs.
+
+\vspace{0.5cm}
+10. Suppose a certain firm is able to produce 125 units of output per day when 19 workers are hired. The firm is able to produce 137 units of output per day when 20 workers are hired, holding other inputs fixed. The marginal product of the 20th worker is
+ 	  a. 	6 units of output.
+ 	  b. 	7 units of output.
+ 	  c. 	12 units of output.
+ 	  d. 	137 units of output.
+
+
+\pagebreak
+
+# Bottom Line Up Front {#sec:bluf}
+Two important concepts in economics are risk preferences and insurance. With uncertainty about how the future looks, both firms and consumers must make assumptions and assess values for present and future conditions. Ultimately, these assumptions help agents make rational decisions about the future and what best to do in the present.
+
+# Risk Preferences / Insurance {#sec:risk}
+
+1. What is “Risk Aversion,” and give an example from Cadet life. \vspace{3cm}
+
+2. Let’s play another game. In economics, we refer to lotteries as random variables over monetary outcomes. For each lottery, you get to pick an option below. What do you play and why? Are you risk-loving, risk-averse, or risk-neutral?  \vspace{0.5cm}
+    
+      Lottery 1: I will either pay you \$50, or I will flip a coin. If heads turns up, I will pay you $100, and if tails turns up, I will pay you nothing. \vspace{0.5cm}
+    
+      Lottery 2: I will either pay you \$50, or I will roll a six-sided die. If it lands on the number three, I will pay you \$300, but if it lands on any other number, I will pay you nothing. \vspace{3.0cm}
+
+3. Given that bad things happen in the world, insurance is a good that people purchase to diversify risk. For example, you all have the opportunity to purchase life insurance policies as a part of Servicemembers’ Group Life Insurance (SGLI) while in service. To be eligible for this benefit, you had to pass certain physical and health standards. For \$500,000 of coverage, I pay roughly \$25 per month for SGLI. For my wife’s civilian policy through Northwestern Mutual, I pay roughly $157 for that same coverage. What are some reasons for why these values differ? \vspace{3cm}
+
+4. Who hits harder? Rugby players or football players? Furthermore, everyone has taken boxing in this class. Would you fight differently if it were bare knuckle and no head-gear versus with head-gear and gloves? What principle to we call this and how does it apply to insurance? \vspace{3cm}
+
+\pagebreak
+
+# Present Value / Future Value {#sec:value}
+
+One of my kids’ favorite games is “Would you rather?” (With a kindergarten and 1st grade lexicon, this loosely translates to “Woodrow rudder?”). To make decisions about how much to save now or what the future value of an investment looks like, we are going to play this game now to calculate both present and future values.
+
+1. Would you rather take \$1,000 today or \$2,000 in 5 years. Assume an average interest rate of 10%. \vspace{3cm}
+
+2. What would the interest rate have to be to make you indifferent between the two options above? \vspace{3cm}
+
+Under the Blended Retirement System (BRS), the Army offers officers with 8-12 years of service a cash bonus called “Continuation Pay,” to get officers to commit to serve for another 3 years. The amount of continuation pay every officer is eligible for depends on the multiplier set by the government (as low as 2.5, but as great as 13) and an officer’s monthly base pay. For example, the current multiplier is 2.5 and an O-4 with 10 years of service (AKA me) earns \$7891.80 in base pay per month; thus, I would be eligible for a \$19,729.80 bonus to serve for 3 more years.
+
+3. What if the Army wanted to know how much they had to pay cadets to get them to commit to 13 years of service upon commissioning? For those wanting to branch aviation, this problem actually hits close to home. Assume that you will commission this May and will face this decision as an O-4 with 10 years of service. Additionally assume that congress will authorize 3% pay raises per year and that you could earn an 8% return over this timeframe. How much would the Army have to pay this graduating class now to commit to 13 years of service? \vspace{3cm}
+
+\pagebreak
+
+# Retirement Savings Application {#sec:retirement}
+
+How much should you save or need for retirement? Great question! Can we make a prediction about that? Of course! Say you retire at age 60 (you cannot access Roth IRA or Thrift Savings Plan until age 59.5 without penalty), you start saving for retirement at age 22, and you are going to live to the ripe old age of 85. How much do you need in present value to have saved for retirement to meet the current budget above? Let’s say inflation averages at 2% over this time period. How much do you need to have saved by age 60 to retire? Let’s assume your budget looks like the following as a married adult with a mortgage, car payments, and an empty-nester.
+
+| Bill                 | Amount       |
+|----------------------|:--------------:|
+| Charity              | $700.00      |
+|                      |              |
+| Mortgage             | $2,000.00    |
+| Car Payments         | $1,000.00    |
+| Insurance            | $200.00      |
+|                      |              |
+| Holidays / Christmas | $200.00      |
+| Life Insurance       | $160.00      |
+| Electricity          | $400.00      |
+| Natural Gas          | $200.00      |
+|                      |              |
+| Internet             | $85.00       |
+| Cell Phone           | $140.00      |
+| Gym Membership       | $130.00      |
+|                      |              |
+| Gas                  | $500.00      |
+| Food                 | $1,000.00    |
+| Entertainment        | $1,000.00    |
+| Clothing             | $100.00      |
+|                      |              |
+| Netflix              | $18.00       |
+| WSJ                  | $4.00        |
+| Spotify              | $16.00       |
+| Apple Cloud Storage  | $1.00        |
+| Audible              | $16.00       |
+|                      |              |
+|                      |              |
+| Monthly Expenses     | $7,870.00    |
+|                      |              |
+| Year Expenses        | $94,440.00   |
+
+\pagebreak

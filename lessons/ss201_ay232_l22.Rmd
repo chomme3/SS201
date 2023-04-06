@@ -1,0 +1,226 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: AY 23-2
+
+bibliography: references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+    toc: false
+    number_sections: true
+  geometry: margin=1in
+  fontsize: 11pt
+  compact-title: true
+header-includes: 
+  \usepackage{booktabs}
+  \usepackage{tabularx}
+  \usepackage{threeparttable}
+  \usepackage{bm}
+  \DeclareMathOperator{\Var}{Var}
+  \usepackage{dcolumn}
+  \usepackage{changepage}
+  \usepackage{multirow}
+  \usepackage[normalem]{ulem}
+  \useunder{\uline}{\ul}{}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage[utf8]{inputenc}
+  \AtBeginDocument{\let\maketitle\relax}
+  \usepackage{enumitem}
+  \setlist[enumerate]{nosep}
+  \renewcommand{\labelenumi}{\alph{enumi})}
+  \usepackage{array}
+  \usepackage{tabularray}
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+  
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+
+\fancyhf{}
+\begin{center}
+    \Large
+    \textbf{
+    \textit{SS201: Principles of Economics} \\ 
+    AY 23-2 \\ 
+    }
+    Lesson 22: Capital Markets I
+\end{center}
+\fancyfoot[C]{\thepage}
+
+# Review {#sec:review}
+\begin{center}
+\resizebox{0.95\textwidth}{!}{
+                \begin{tabular}{C{.02\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}}
+Q & 
+\multicolumn{1}{p{1.5cm}|}{\centering Total Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Fixed Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Variable Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Marginal Cost \\ (Dollars)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AFC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AVC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}}{\centering ATC \\ (Dollars per ride)} \\ 
+\hline
+0	& 50  & 50 & 0 & --- & --- & --- &--- \\
+\hline
+1	& 150  & A & B & C & D & E & F  \\
+\hline
+2	& G & H & I & 120 & J & K & L \\
+\hline
+3	& M & N & O & P & Q & 120 & R \\
+\end{tabular}
+}
+\end{center}
+\vspace{0.5cm}
+1. What is the value of A?
+ 	  a. 	$25
+ 	  b. 	$50
+ 	  c. 	$100
+ 	  d. 	$200
+\vspace{0.5cm}
+2. A traffic light at an intersection is
+ 	  a. 	rival and excludable in consumption.
+ 	  b. 	not rival but excludable in consumption.
+ 	  c. 	rival but not excludable in consumption.
+ 	  d. 	not rival and not excludable in consumption.
+\vspace{0.5cm}
+3. A monopolist's profits with price discrimination will be
+ 	  a. 	lower than if the firm charged a single, profit-maximizing price.
+ 	  b. 	the same as if the firm charged a single, profit-maximizing price.
+ 	  c. 	higher than if the firm charged just one price because the firm will capture more consumer surplus.
+ 	  d. 	higher than if the firm charged a single price because the costs of selling the good will be lower.
+\vspace{0.5cm}
+4. Which of the following expressions is correct?
+ 	  a. 	accounting profit = economic profit + implicit costs
+ 	  b. 	accounting profit = total revenue − implicit costs
+ 	  c. 	economic profit = accounting profit + explicit costs
+ 	  d. 	economic profit = total revenue − implicit costs
+\vspace{0.5cm}
+5. Profit-maximizing firms enter a competitive market when existing firms in that market have
+ 	  a. 	total revenues that exceed fixed costs.
+ 	  b. 	total revenues that exceed total variable costs.
+ 	  c. 	average total costs that exceed average revenue.
+ 	  d. 	average total costs that are less than market price.
+\pagebreak
+6. Suppose that a worker in Radioland can produce either 5 radios or 1 television per year, and a worker in Teeveeland can produce either 1 radios or 5 televisions per year. Each nation has 100 workers. Also, suppose that each country completely specializes in producing the good in which it has a comparative advantage. If Radioland trades 50 radios to Teeveeland in exchange for 50 televisions each year, then each country's maximum consumption of new radios and televisions per year will be
+ 	  a. 	50 radios, 450 televisions in Radioland and 450 radios, 50 televisions in Teeveeland.
+ 	  b. 	450 radios, 50 televisions in Radioland and 50 radios, 450 televisions in Teeveeland.
+ 	  c. 	100 radios, 50 televisions in Radioland and 50 radios, 100 televisions in Teeveeland.
+ 	  d. 	450 radios, 50 televisions in Radioland and 50 radios, 500 televisions in Teeveeland.
+\vspace{0.5cm}
+7. Tomato sauce and spaghetti noodles are complementary goods. A decrease in the price of tomatoes will
+ 	  a. 	increase consumer surplus in the market for tomato sauce and decrease producer surplus in the market for spaghetti noodles.
+ 	  b. 	increase consumer surplus in the market for tomato sauce and increase producer surplus in the market for spaghetti noodles.
+ 	  c. 	decrease consumer surplus in the market for tomato sauce and increase producer surplus in the market for spaghetti noodles.
+ 	  d. 	decrease consumer surplus in the market for tomato sauce and decrease producer surplus in the market for spaghetti noodles.
+\vspace{0.5cm}
+8. You go to the movieplex where movies ordinarily cost \$8.00. You are intending to see a movie for which you have a \$2.50-off coupon good for only that movie at that time. However, when you get there you see a friend who asks if you would rather see a new release. Both movies start and end at the same time. If you decide to see the new release with your friend, what is your opportunity cost?
+ 	  a. 	The amount you value the first movie + \$2.50
+ 	  b. 	The amount you value the first movie + \$8.00
+ 	  c. 	\$2.50
+ 	  d. 	\$8.00
+\vspace{0.5cm}
+9. Alicia is a vegetarian, so she does not eat beef. That is, beef provides no additional utility to Alicia. She loves potatoes, however. If we illustrate Alicia's indifference curves by drawing beef on the horizontal axis and potatoes on the vertical axis, her indifference curves will
+ 	  a. 	slope downward.
+ 	  b. 	be vertical straight lines.
+ 	  c. 	slope upward.
+ 	  d. 	be horizontal straight lines.
+\vspace{0.5cm}
+10. Which of the following events would increase producer surplus?
+ 	  a. 	Sellers' costs stay the same and the price of the good increases.
+ 	  b. 	Sellers' costs increase and the price of the good stays the same.
+ 	  c. 	Sellers' costs increase and the price of the good decreases.
+ 	  d. 	Sellers' costs stay the same and the price of the good decreases.
+
+\pagebreak
+
+# Bottom Line Up Front {#sec:bluf}
+We can model financial markets the same as a market for any other good. We also apply definitions to what saving and investing look like within our macroeconomy, both private and public. Overall, the identity for income and expenditure still must hold.
+
+# Savings Terminology {#sec:savings}
+In economics we make a distinction between savings and investment (and this is different from the way we normally use these terms in business/finance). Savers save and borrowers invest. Putting money into the stock market is SAVING, whereas the company that issued the stock is BORROWING.
+
+1. Define Private Savings.\vspace{3cm}
+
+2. When we say households are "saving" (i.e. private savings increases) what do we mean in practice? What are they actually doing?\vspace{3cm}
+
+3. Name two types of financial intermediaries households actually use when they save?\vspace{3cm}
+
+4. In econ language, what do borrowers borrow money for?\vspace{3cm}
+
+5. How do borrowers "raise" money?\vspace{3cm}
+
+6. Classify the following as a borrower or a saver:
+    a. I put some money into the stock market \vspace{1.0cm}
+    b. I buy a house using a mortgage \vspace{1.0cm}
+    c. Company X becomes public and issues stock \vspace{1.0cm}
+    d. Company Y issues bonds \vspace{1.0cm}
+    e. I put money into a savings account at the bank \vspace{1.0cm}
+    f. I buy a mutual fund \vspace{1.0cm}
+    g. A firm decides to increase its capital, say by buying tractors \vspace{1.0cm}
+
+\pagebreak
+
+# National, Public, and Private Savings {#sec:publicprivsav}
+
+National Savings (S) is defined as the total income in the economy left over after paying for consumption and government purchases. That is $S = Y – C – G$. It is composed of private savings plus public savings. Private savings is the income households have left after paying for taxes and consumption. Public savings is the tax revenue the government has left after paying for its spending (it can be negative = deficit, or positive = surplus, or zero = balanced).
+
+1. Prove that in a closed economy, $S = I$. That is, for the economy as a whole, savings must equal investment. (Hint: recall that $Y = C + I + G + NX$). \vspace{3cm}
+
+2. Prove that National Savings = Private Savings + Public Savings, where private savings is $Y – C – T$ (T is taxes) and public savings is $T - G$. \vspace{3cm}
+
+3. Suppose GDP equals \$10 trillion, consumption equals \$6.5 trillion, the government spends \$2 trillion and has a budget deficit of \$0.3 trillion. The economy is closed. Find public saving, net taxes, private saving, national saving, and investment. \vspace{3cm}
+
+4. In question 1 you proved that $S = I$ for the economy as a whole. (Note that this is obviously not necessarily true for any individual/firm). What mechanism (or price, or rate) in the economy adjusts so that $S = I$? \vspace{3cm}
+
+\pagebreak
+
+# The Market for Loanable Funds (i.e. Capital Markets) {#sec:loanfunds}
+
+For the sake of simplicity, we assume there is just a single financial market in the economy where all borrowers go for the purpose of raising funds for investment and all savers dump their savings. We call this market the market for capital or "the loanable funds market."
+
+1. Draw the market for loanable funds below. Label axes and each curve. Underneath the supply curve, explain who/what makes up the supply curve (word bank: public savings, private savings, private investment). Underneath the demand curve, explain who/what makes up the demand curve (word bank: public savings, private savings, private investment).
+
+```{r g1, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/grid.png")
+``` 
+
+2. For each of the following scenarios, determine which curve shifts (supply or demand), which components of supply (private / public savings) change, if any, and state clearly what happens to the interest rate and to total private investment. It may help to draw a figure.
+    a. There is a new TV show that starts a savings fad. \vspace{2.0cm}
+    b. The government cuts spending (but not taxes). \vspace{2.0cm}
+    c. The government cuts taxes, without altering spending. \vspace{2.0cm}
+    d. The government offers an investment tax credit (you can assume the impact on the government’s budget is minimal). \vspace{2.0cm}
+
+3. What is meant by the “crowding out” effect of government deficits? \vspace{3cm}
