@@ -173,6 +173,8 @@ Bob lost his full time job in a steel mill and now works part time as a waiter. 
 
 Cassie is an attorney who runs her own law practice.
 
+-- 
+
 - Employed
 
 --
@@ -226,12 +228,12 @@ Harry was laid off from his job at an auto manufacturing plant six months ago. F
 </br></br></br>
 *Unemployment Rate*
 --
-= $\frac{\text{Number of Unemployed}}{\text{Labor Force}} \times 100$
+ = $\frac{\text{Number of Unemployed}}{\text{Labor Force}} \times 100$
 --
 </br></br></br>
 *Employment to Population Ratio*
 --
-= $\frac{\text{Number of Employed}}{\text{Adult Population}} \times 100$
+ = $\frac{\text{Number of Employed}}{\text{Adult Population}} \times 100$
 
 ---
 # Types of Unemployment
@@ -256,6 +258,7 @@ Cyclical
 
 --
 “Efficiency wages”
+
 --
 
 Better worker health/nutrition
