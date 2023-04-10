@@ -56,7 +56,8 @@ The textbook used for this course is Mankiw's *Principles of Economics*, Ninth E
 22. Capital Markets
 
 23. Capital Markets II
-
+ - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l23_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l23_slides.Rmd)\]
+ 
 24. Unemployment
 
 25. The Monetary System \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l25.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l25.Rmd)\]
