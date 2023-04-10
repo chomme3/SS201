@@ -59,8 +59,9 @@ The textbook used for this course is Mankiw's *Principles of Economics*, Ninth E
  - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l23_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l23_slides.Rmd)\]
  
 24. Unemployment
-
-25. The Monetary System \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l25.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay231_l25.Rmd)\]
+- Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l24_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l24_slides.Rmd)\]
+ 
+25. The Monetary System
 
 26. Aggregate Demand and Aggregate Supply
 
