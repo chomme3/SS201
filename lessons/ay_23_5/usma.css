@@ -1,0 +1,367 @@
+/*
+CSS for xaringan slides in USMA flavor
+Author: Carson Homme
+Updated: 5/03/2022
+*/
+
+/* Package defaults that we slightly tweak */
+
+.remark-slide-content {
+  font-size: 24px;
+  padding: 2em 2em 2em 2em;
+  line-height: 1.2em;
+  margin-top: 0em;
+}
+
+.remark-slide-content h1 {
+  font-size: 55px;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.remark-slide-content h2 {
+  font-size: 45px;
+  color: #515151;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.remark-slide-content h3 {
+  font-size: 35px;
+  line-height: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.remark-slide-content ul {
+  margin: 0px 0px 0px 0px;
+}
+
+.remark-slide-content p {
+  margin-block-end: 0em;
+}
+
+a, a > code {
+    color: #c68856; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #272822;
+  color: #777872;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout (slightly wider for aspect ration) */
+.left-column {
+  width: 75%;
+  height: 92%;
+  float: left;
+}
+
+
+/* slightly thiner to suppor aspect ration */
+.right-column {
+  width: 25%;
+  height: 92%;
+  float: right;
+}
+
+.pull-left {
+  float: left;
+  width: 45%;
+  padding: 0em 0em 0em 0em;
+}
+
+.pull-right {
+  float: right;
+  width: 45%;
+  padding: 0em 0em 0em 0em;
+}
+
+.pull-right + * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+/* remove color from tables */
+table {
+  margin: auto;
+  border-top: none;
+  border-bottom: none;
+}
+
+table thead th { border-bottom: none; }
+thead, tfoot, th, tr, td { background-color: #FFFFFF }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/* Progress Bar Instead of Slide Number */
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: black;
+}
+
+.title-slide .remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: white;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* RU additions */
+/*~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url("img/slide_logo.png");
+  background-position: 50% 25%;
+  background-size: 700px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+.tiny {
+  font-size: 60%;
+}
+
+.small {
+  font-size: 70%;
+}
+
+.medium {
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
+.bigger {
+  font-size: 200%;
+  line-height: 1.5em;
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #515151;
+  padding-top: 250px;
+  font-weight: normal;
+  font-size: 45px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #666666;
+  font-size: 35px;
+  text-align: left;
+  text-shadow: none;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~*/
+/* SECTION DIVIDERS */
+/*~~~~~~~~~~~~~~~~~~*/
+
+/* section divider red */
+.title-slide-section-red {
+  background-color:   #0300cc56;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* section divider red H1 fonts */
+.title-slide-section-red h1, .title-slide-section-red h2, .title-slide-section-red h3, .title-slide-section-red p {
+  color: #fff;
+}
+
+/* section divider grey */
+.title-slide-section-grey {
+  background-color: #515151;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* section divider grey H1 fonts */
+.title-slide-section-grey h1, .title-slide-section-grey h2, .title-slide-section-grey h3 {
+  color: #fff;
+}
+
+.title-slide-section-grey p {
+  color: #fff;
+}
+
+/*~~~~~~~~~~~~~~~~~~*/
+/* FINAL SLIDE      */
+/*~~~~~~~~~~~~~~~~~~*/
+
+.title-slide-final {
+  background-color: #272822;
+  color: #fff;
+  padding-left: 100px;
+  text-shadow: 0 0 20px #333;
+  text-align: center;
+}
+
+.title-slide-final h1 {
+  color: #0300cc56;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+/*.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+/*}*/
+
+
+/* Color adjustments for text */
+
+/* Make bold syntax compile to RU-red */
+strong {
+    color: #000000;
+}
+
+.RUred {
+    color: #0300cc56;
+}
+
+/* Add blue tag */
+.blue {
+  color: #0000CC;
+  font-weight: bold;
+}
+
+/* Add grey tag */
+.grey {
+  color: #515151;
+}
+
+.lightgrey {
+  color: #818181;
+}
+
+/* Force black */
+.black {
+  color: black;
+  font-weight: bold;
+}
+
+/* Add white tag */
+.white {
+  color: white;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #000000
+}
+
+h2 {
+  color: #515151;
+}
+
+h3 {
+  color: #c68856;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+/* ru blockquote */
+ru-blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 10px  #0300cc56;;
+  background-color: #818181;
+  padding: 1em;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
