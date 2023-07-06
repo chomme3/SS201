@@ -138,6 +138,12 @@ environment(print_bib_rmd) <- asNamespace("RefManageR")
 - Causal Inference Primer
   - Why No Computers in the Classroom?
 
+- Course Schedule (TEE TIME)
+
+- **Break**
+
+- Economic Methods, Models, and Gains from Exchange
+
 ---
 # This is me...
 
@@ -251,6 +257,28 @@ What you can expect from me:
 ]<!----End of Panel Set---->
 
 ---
+# Issue Analysis Essay
+
+**Intent:** Expose you to broader economic research and how economists view problems
+
+Suspense: 17 2359 JUL23
+
+.center[
+**YOU COULD WRITE THIS ESSAY THIS WEEKEND!!**
+]
+
+Three Prompts:
+  - Intergenerational Economic Mobility
+  - Discrimination in Real World Markets
+  - Differences in Gender in College Majors
+
+Topic picked by Monday, 10JUL
+- Short in-class quiz over sources worth 7 pts (10%)
+
+Generative AI authorized, but must cite
+
+---
+
 class: inverse, center, middle
 
 # Why is the Army making me take this course?
@@ -387,12 +415,24 @@ knitr::include_graphics("../img/no_comp.png")
 ```
 
 ---
+# Course Schedule Review
+
+TEE - Currently scheduled for Friday, 28 0800 - 1130 JUL 23
+
+COA 1) Saturday Class (15 and/or 22JUL)
+
+COA 2) Thursday 27 1300 - 1630, 85% or Better
+
+COA 3) ???
+
+---
 # Computer Stuff
 
-.center[**Cengage**]
+.center[**Cengage**
 
 Course Key - MTPQLHRZ7X9X
 
-.center[**Canvas**]
+**Canvas**
 
 Anyone not have access?
+]
