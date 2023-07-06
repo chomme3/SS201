@@ -149,18 +149,22 @@ environment(print_bib_rmd) <- asNamespace("RefManageR")
 
 .pull-left[
 ```{r fam1, out.width='80%', fig.align='center'}
-knitr::include_graphics("../img/fam.jpg.JPG")
+knitr::include_graphics("../img/bowlgame.jpg")
+```
+
+```{r fam4, out.width='80%', fig.align='center'}
+knitr::include_graphics("../img/fam2.png")
 ```
 ]
 
 .pull-right[
-```{r fam2, out.width='70%', fig.align='center'}
+```{r fam2, out.width='80%', fig.align='center'}
 knitr::include_graphics("../img/IMG_0600.jpg")
 ```
 
 
-```{r fam3, out.width='70%', fig.align='center'}
-knitr::include_graphics("../img/bowlgame.jpg")
+```{r fam3, out.width='80%', fig.align='center'}
+knitr::include_graphics("../img/family.jpg")
 ```
 
 ]
