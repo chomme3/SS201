@@ -9,7 +9,7 @@ The textbook used for this course is Mankiw's *Principles of Economics*, Ninth E
 
 ## Lesson Material
 
-1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.Rmd)\]
+1. Economic Principles \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l1.html) | [**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ay_23_5/ss201_ay232_l1.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons//ay_23_5/ss201_ay232_l1.Rmd)\]
 
 2. Economic Methods, Models, and Gains from Exchange \[[**.pdf**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.pdf) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l2.Rmd)\]
 
