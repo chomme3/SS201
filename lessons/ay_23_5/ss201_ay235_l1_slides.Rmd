@@ -162,7 +162,6 @@ knitr::include_graphics("../img/fam2.png")
 knitr::include_graphics("../img/IMG_0600.jpg")
 ```
 
-
 ```{r fam3, out.width='80%', fig.align='center'}
 knitr::include_graphics("../img/fam3.png")
 ```
