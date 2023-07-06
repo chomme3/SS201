@@ -176,7 +176,7 @@ thead, tfoot, th, tr, td { background-color: #FFFFFF }
 
 /* Add image and change bg color */
 .title-slide {
-  background-image: url("img/slide_logo.png");
+  background-image: url("slide_logo.png");
   background-position: 50% 25%;
   background-size: 700px;
   background-color: #fff;

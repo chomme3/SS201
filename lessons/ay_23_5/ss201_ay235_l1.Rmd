@@ -28,17 +28,7 @@ header-includes:
   \usepackage[normalem]{ulem}
   \useunder{\uline}{\ul}{}
   \usepackage{fancyhdr}
-  \usepackage{graphicx}
-  \usepackage{multicol}
-  \usepackage[utf8]{inputenc}
   \AtBeginDocument{\let\maketitle\relax}
-  \usepackage{enumitem}
-  \setlist[enumerate]{nosep}
-  \renewcommand{\labelenumi}{\alph{enumi})}
-  \usepackage{array}
-  \usepackage{tabularray}
-  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-
   
   # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
   # - \externaldocument[SM-]{../SM/sceptic-SM}
@@ -81,8 +71,9 @@ Comparative advantage is the basis for trade. Despite individuals having an abso
 
 # Modeling Disclaimer {#sec:model}
 ```{r box, out.width='60%', fig.align='center'}
-knitr::include_graphics("../img/box.jpg")
+knitr::include_graphics("img/box.jpg")
 ```
+
 \begin{center}
   \textit{``All models are wrong, but some are useful.''} \\
   - George Box
@@ -101,7 +92,7 @@ only smokes turkeys, he can smoke 5 turkeys. Assume he can switch between tasks 
 
 1. If you wanted to model this production and draw a picture of all the possible combinations that MAJ Homme could produce, what would this picture look like? Graph it below with turkeys on the horizontal axis and steaks on the vertical axis.
 ```{r g1, out.width='60%', fig.align='center'}
-knitr::include_graphics("../img/grid.png")
+knitr::include_graphics("img/grid.png")
 ```
 
 2. What do we call the above graph?
@@ -119,17 +110,17 @@ knitr::include_graphics("../img/grid.png")
 6. Suppose a new grill allows MAJ Homme to grill faster so that in any fixed amount of time, he can grill more steaks.  What would the new production possibility frontier curve look like? Sketch both below.
 
 ```{r g2, out.width='60%', fig.align='center'}
-knitr::include_graphics("../img/grid.png")
+knitr::include_graphics("img/grid.png")
 ```
 
 \pagebreak
 # Trade
-Now let me introduce you to CPT(P) Webster. When it comes to the grill, this man's a straight savage! On one Sunday, he can either grill 40 steaks or smoke 10 turkeys.
+Now let me introduce you to MAJ Traeger. When it comes to the grill, this man's a straight savage! On one Sunday, he can either grill 40 steaks or smoke 10 turkeys.
 
-1. Compared with MAJ Homme, which SS201 instructor has the absolute advantage in producing steaks? Turkeys? 
+1. Compared with MAJ Homme, which person has the absolute advantage in producing steaks? Turkeys? 
   \vspace{3cm}
 
-2. Given your answer to the previous question, does it ever make sense for CPT(P) Webster to trade with MAJ Homme?
+2. Given your answer to the previous question, does it ever make sense for MAJ Traeger to trade with MAJ Homme?
   \vspace{3cm}
   
 3. What is comparative advantage? Which instructor has the comparative advantage for each good?
@@ -140,10 +131,10 @@ Now let me introduce you to CPT(P) Webster. When it comes to the grill, this man
 
 \pagebreak
 
-5. Without trade, MAJ Homme can produce 15 steaks and 2 turkeys and CPT(P) Webster can produce 8 steaks and 8 turkeys. If they decide to trade, how much can each attain relative to these production sets? Graph both production possibility frontiers below, the production points they can produce without trade, and the production points they can attain with trade.
+5. Without trade, MAJ Homme can produce 15 steaks and 2 turkeys and MAJ Traeger can produce 8 steaks and 8 turkeys. If they decide to trade, how much can each attain relative to these production sets? Graph both production possibility frontiers below, the production points they can produce without trade, and the production points they can attain with trade.
 
 ```{r g3, out.width='100%', fig.align='center'}
-knitr::include_graphics("../img/double_grid.png")
+knitr::include_graphics("img/double_grid.png")
 ```
 
 \pagebreak
@@ -157,5 +148,5 @@ knitr::include_graphics("../img/double_grid.png")
 - How could you set up an experiment to test this?
 
 ```{r pv, out.width='100%', fig.align='center'}
-knitr::include_graphics("../img/peer_variance.png")
+knitr::include_graphics("img/peer_variance.png")
 ```
