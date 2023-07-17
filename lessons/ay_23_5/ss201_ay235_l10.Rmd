@@ -1,0 +1,203 @@
+---
+title: SS201
+subtitle: Principles of Economics
+author: MAJ Carson Homme
+date: STAP 3 (AY 23-5)
+
+bibliography: ../references.bib
+bibstyle: spphys
+# bibstyle options spbasic(default), spphys, spmpsci
+output:
+  pdf_document:
+    citation_package: default
+    latex_engine: xelatex
+    toc: false
+    number_sections: true
+  geometry: margin=1in
+  fontsize: 11pt
+  compact-title: true
+header-includes: 
+  \usepackage{booktabs}
+  \usepackage{tabularx}
+  \usepackage{threeparttable}
+  \usepackage{bm}
+  \DeclareMathOperator{\Var}{Var}
+  \usepackage{dcolumn}
+  \usepackage{changepage}
+  \usepackage{multirow}
+  \usepackage[normalem]{ulem}
+  \useunder{\uline}{\ul}{}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage[utf8]{inputenc}
+  \AtBeginDocument{\let\maketitle\relax}
+  \usepackage{enumitem}
+  \setlist[enumerate]{nosep}
+  \renewcommand{\labelenumi}{\alph{enumi})}
+  \usepackage{array}
+  \usepackage{tabularray}
+  \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+  
+  # - \usepackage{xr} ## Needs .aux file which knitr automatically removes
+  # - \externaldocument[SM-]{../SM/sceptic-SM}
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	cache = TRUE, 
+	echo = FALSE, 
+	warning = FALSE,
+	message = FALSE,
+	fig.align = 'center',
+	out.width = '100%',
+	dpi=300
+	)
+```
+
+```{r libs, cache=FALSE, message=FALSE}
+library(data.table)
+library(ggplot2)
+library(forcats)
+library(kableExtra)
+```
+
+
+\fancyhf{}
+\begin{center}
+    \Large
+    \textbf{
+    \textit{SS201: Principles of Economics} \\ 
+    AY 23-5 \\ 
+    }
+    Lesson 10: Capital and Labor Markets
+\end{center}
+\fancyfoot[C]{\thepage}
+
+# Review {#sec:review}
+\begin{center}
+\resizebox{0.95\textwidth}{!}{
+                \begin{tabular}{C{.02\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}|
+                C{.08\linewidth}}
+Q & 
+\multicolumn{1}{p{1.5cm}|}{\centering Total Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Fixed Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Variable Cost \\ (Dollars)} & \multicolumn{1}{p{1.5cm}|}{\centering Marginal Cost \\ (Dollars)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AFC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}|}{\centering AVC \\ (Dollars per ride)} & 
+\multicolumn{1}{p{1.5cm}}{\centering ATC \\ (Dollars per ride)} \\ 
+\hline
+0	& 50  & 50 & 0 & --- & --- & --- &--- \\
+\hline
+1	& 150  & A & B & C & D & E & F  \\
+\hline
+2	& G & H & I & 120 & J & K & L \\
+\hline
+3	& M & N & O & P & Q & 120 & R \\
+\end{tabular}
+}
+\end{center}
+\vspace{0.5cm}
+1. What is the value of P?
+ 	  a. 	$100
+ 	  b. 	$120
+ 	  c. 	$140
+ 	  d. 	$160
+\vspace{0.5cm}
+2. What is the value of M?
+ 	  a. 	$380
+ 	  b. 	$350
+ 	  c. 	$410
+ 	  d. 	$390
+\vspace{0.5cm}
+3. What is the value of O?
+ 	  a. 	$200
+ 	  b. 	$300
+ 	  c. 	$370
+ 	  d. 	$360
+\vspace{0.5cm}
+4. Parker says that the present value of \$350 to be received one year from today if the interest rate is 6 percent is less than the present value of \$350 to be received two years from today if the interest rate is 3 percent. Ryan says that \$350 saved for one year at 6 percent interest has a smaller future value than \$350 saved for two years at 3 percent interest.
+ 	a. 	Both Parker and Ryan are correct.
+ 	b. 	Both Parker and Ryan are incorrect.
+ 	c. 	Only Parker is correct.
+ 	d. 	Only Ryan is correct.
+\pagebreak
+5. Suppose that a worker in Cornland can grow either 40 bushels of corn or 10 bushels of oats per year, and a worker in Oatland can grow either 5 bushels of corn or 50 bushels of oats per year. There are 20 workers in Cornland and 20 workers in Oatland. If the two countries do not trade, Cornland will produce and consume 400 bushels of corn and 100 bushels of oats, while Oatland will produce and consume 20 bushels of corn and 800 bushels of oats. If each country made the decision to specialize in producing the good in which it has a comparative advantage, then the combined yearly output of the two countries would increase by
+ 	a. 	800 bushels of corn and 100 bushels of oats.
+ 	b. 	380 bushels of corn and 100 bushels of oats.
+ 	c. 	100 bushels of corn and 380 bushels of oats.
+ 	d. 	380 bushels of corn and 1000 bushels of oats.
+\vspace{0.5cm}
+6. Steak and chicken are substitutes. A sharp reduction in the supply of steak would
+ 	a. 	increase consumer surplus in the market for steak and decrease producer surplus in the market for chicken.
+ 	b. 	increase consumer surplus in the market for steak and increase producer surplus in the market for chicken.
+ 	c. 	decrease consumer surplus in the market for steak and increase producer surplus in the market for chicken.
+ 	d. 	decrease consumer surplus in the market for steak and decrease producer surplus in the market for chicken.
+\vspace{0.5cm}
+7. A benefit to society of the patent and copyright laws is that those laws
+ 	a. 	help to keep prices down.
+ 	b. 	help to prevent a single firm from acquiring ownership of a key resource.
+ 	c. 	encourage creative activity.
+ 	d. 	discourage the production of inefficient products.
+\vspace{0.5cm}
+8. Average total cost is increasing whenever
+ 	a. 	total cost is increasing.
+ 	b. 	marginal cost is increasing.
+ 	c. 	marginal cost is less than average total cost.
+ 	d. 	marginal cost is greater than average total cost.
+\vspace{0.5cm}
+9. A similarity between monopoly and monopolistic competition is that in both market structures
+ 	a. 	there are a small number of sellers.
+ 	b. 	strategic interactions among sellers are not important.
+ 	c. 	sellers are price makers rather than price takers.
+ 	d. 	there are only a few buyers but many sellers.
+\vspace{0.5cm}
+10. Which of the following would shift the supply of umbrellas to the left?
+ 	a. 	Rainfall is expected to be unusually low in the coming year.
+ 	b. 	The price of an umbrella increases by \$12.
+ 	c. 	The cost of the fabric used to make umbrellas decreases.
+ 	d. 	The number of firms making umbrellas decreases.
+
+\pagebreak
+
+# Labor Markets {#sec:bluf}
+Unemployment is a significant factor within our economy and this lesson helps define the terms and explain how it is calculated. Important to take away is that there will always be some sort of unemployment and that firms might have an incentive to pay workers more than they are worth. 
+
+## The Labor Market {#sec:market}
+
+Define the following:
+
+1. Adult (civilian) population \vspace{3cm}
+2. Employed person \vspace{3cm}
+3. Unemployed person \vspace{3cm}
+4. Not in the labor force \vspace{3cm}
+
+Categorize the below people:
+
+5. Abby is a full time 20-year-old college student who doesn’t work to focus on her studies. \vspace{1.0cm}
+6. Bob lost his full time job in a steel mill and now works part time as a waiter. He is also actively looking for a full time job. \vspace{1.0cm}
+7. Cassie is an attorney who runs her own law practice. \vspace{1.0cm}
+8. Darryl lost his job as a programmer when his company went out of business two months ago. Yesterday he interviewed for a new job and also sent out two new job applications. \vspace{1.0cm}
+9. Edith worked full time as a nurse but is taking a year off to care for her newborn baby. \vspace{1.0cm}
+10. Francis is a 15-year-old high school student who works part time at McDonalds for spare money. \vspace{1.0cm}
+11. Gina is a 21-year-old West Point cadet. \vspace{1.0cm}
+12. Harry was laid off from his job at an auto manufacturing plant six months ago. For a while he tried to find a new similar job, but he gave up searching two months ago. \vspace{1.0cm}
+
+Write formulas for the following:
+
+13. Unemployment Rate \vspace{3cm}
+14. Labor Force Participation Rate \vspace{3cm}
+
+Define the following:
+
+15. Frictional Unemployment \vspace{3cm}
+16. Structural Unemployment \vspace{3cm}
+17. Cyclical Unemployment \vspace{3cm}
+18. Natural Rate of Unemployment \vspace{3cm}
+19. Efficiency Wages \vspace{3cm}
