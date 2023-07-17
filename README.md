@@ -51,7 +51,7 @@ The textbook used for this course is Mankiw's *Principles of Economics*, Ninth E
  - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l20_slides.Rmd)\]
 
 21. Long Run Economic Growth 
- - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l21_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ss201_ay232_l21_slides.Rmd)\]
+ - Slides \[[**.html**](https://raw.githack.com/chomme3/SS201/main/lessons/ay_23_5/ss201_ay235_l9_slides.html) | [**.Rmd**](https://raw.githack.com/chomme3/SS201/main/lessons/ay_23_5/ss201_ay235_l9_slides.Rmd)\]
 
 22. Capital Markets
 
