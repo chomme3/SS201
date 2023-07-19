@@ -172,23 +172,7 @@ knitr::include_graphics("img/gdp_life_sat.png")
 ---
 # Growth Matters, but Spending Isn't Everything
 
-```{r gdp_med_spend, out.width='90%', fig.align='center'}
-knitr::include_graphics("img/gdp_med_spend.png")
-```
 
----
-# Growth Matters, but Spending Isn't Everything
-
-```{r inf_mort, out.width='90%', fig.align='center'}
-knitr::include_graphics("img/inf_mort.png")
-```
-
----
-# Growth Matters, but Spending Isn't Everything
-
-```{r life_expec, out.width='90%', fig.align='center'}
-knitr::include_graphics("img/life_expec.png")
-```
 ---
 # A Nation's Production Function
 .big[
@@ -234,6 +218,14 @@ $$Y = 5L^\frac{2}{3} K^\frac{1}{3}$$
 $$\frac{Y}{L} = 5(\frac{K}{L})^\frac{1}{3}$$
 ---
 # A Nation's Production Function
+### The Complete Solow Model
+</br></br>
+```{r solow_complete, out.width='90%', fig.align='center'}
+knitr::include_graphics("img/solow_complete.png")
+```
+
+---
+# A Nation's Production Function
 ### The Catch-Up Effect
 </br></br>
 ```{r solow_catch, out.width='90%', fig.align='center'}
@@ -268,7 +260,7 @@ knitr::include_graphics("img/pop_growth.png")
 ---
 # Some Other Growth Considerations
 
-Improve human capital to increase $\frac{H}{K}$
+Improve human capital to increase $\frac{H}{L}$
 - Education and health
 
 ```{r educ_growth, out.width='70%', fig.align='center'}

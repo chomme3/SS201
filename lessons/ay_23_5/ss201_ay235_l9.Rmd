@@ -178,6 +178,100 @@ library(kableExtra)
    	d. falls, the supply of the good rises.
 
 \pagebreak
+# Macroeconomic Aggregates
+We now begin our study of the larger economy, how it is measured, and some general models that explain economic growth. In assessing differences and how economies are measured, one always must be careful to distinguish between nominal and real values. Economists use measures such as the Gross Domestic Product Deflator and the Consumer Price Index to help identify real changes within the economy. What is worth a dollar today, may or may not be worth a dollar tomorrow.
+
+## Gross Domestic Product {#sec:gdp}
+1.	What does Gross Domestic Product (GDP) measure? \vspace{3cm}
+
+2.	What are the two main approaches to calculating GDP? What is their relationship? \vspace{3cm}
+
+3.	What are the components of GDP, using the expenditure method? \vspace{3cm}
+
+4.	What happens to GDP from each of the following activities? What components are affected?
+    a. You get a $40 haircut in NYC \vspace{1cm}
+    b. You mow your own lawn \vspace{1cm}
+    c. You mow your neighbor’s lawn, he mows yours, and you each pay each other $20. \vspace{1cm}
+    d. A steel mill sells 10 tons of steel to a Dodge factory for use that year  \vspace{1cm}
+    e. You buy $100 worth of Gamestop stock  \vspace{1cm}
+    f. Apple produces a laptop that it does not sell  \vspace{1cm}
+    g. Apple sells the laptop next year  \vspace{1cm}
+    h. You buy a Ferrari \vspace{1cm}
+    i. A restaurant buys a new pizza oven \vspace{1cm}
+    j. Government pays $1000 in social security to a retiree  \vspace{1cm}
+    k. NY state builds a bridge from West Point to Garrison  \vspace{1cm}
+ 
+5.	What are some limitations of GDP as a measure of economic well-being of our country? \vspace{3cm}
+
+6.	What is the difference between Nominal GDP and Real GDP? \vspace{3cm}
+
+\pagebreak
+
+## Price Levels and Inflation {#sec:pl}
+1. List and define two ways to measure the price level, and describe how to calculate them. When might each type of measure be appropriate? \vspace{3cm}
+
+Use the below table to answer the following questions. Fiji produces only sugar, vacations, and planes.
+
+\begin{center}
+\resizebox{0.95\textwidth}{!}{
+                \begin{tabular}{|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|}
+\hline
+\multicolumn{1}{|p{1.5cm}|}{\centering Year } & \multicolumn{1}{p{1.5cm}|}{\centering Price \\ of  \\ Sugar} & \multicolumn{1}{p{1.5cm}|}{\centering Quantity (tons) \\ of Sugar} & \multicolumn{1}{p{1.5cm}|}{\centering Price \\ of Vacations} & \multicolumn{1}{p{1.5cm}|}{\centering Quantity \\ of Vacations} & \multicolumn{1}{p{1.5cm}|}{\centering Price \\ of a Plane} & \multicolumn{1}{p{1.5cm}|}{\centering Quantity \\ of \\ Planes} \\
+\hline
+2013	& 5 & 100 & 1200 & 120 & 500,000 & 1  \\
+\hline
+2014	& 7 & 150 & 1500 & 125 & 550,000 & 1 \\
+\hline
+2015	& 7 & 150 & 1500 & 125 & 600,000 & 1 \\
+\hline
+\end{tabular}}
+\end{center}
+
+2. Using the above table, fill out the below.
+  
+  \begin{center}
+                \begin{tabular}{|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|}
+\hline
+\multicolumn{1}{|p{1.5cm}|}{\centering Year} & \multicolumn{1}{p{3.5cm}|}{\centering Nominal \\ GDP} & \multicolumn{1}{p{3.5cm}|}{\centering Real GDP \\ (\$2013)} & \multicolumn{1}{p{3.5cm}|}{\centering GDP \\ Deflator} \\
+\hline
+2013	& & & \\
+\hline
+2014	& & & \\
+\hline
+2015	& & & \\
+\hline
+\end{tabular}
+\end{center}
+  
+3. Now assume Fiji uses a bundle of 2 tons of sugar and 1 vacation for its CPI index.  What is the market bundle cost for 2013?  For 2014?  For 2015? What is the CPI (2013 base)? Complete the table below.
+
+\begin{center}
+                \begin{tabular}{|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|C{.08\linewidth}|}
+\hline
+\multicolumn{1}{|p{1.5cm}|}{\centering Year} & \multicolumn{1}{|p{4.5cm}|}{\centering Cost of Basket} & \multicolumn{1}{|p{4.5cm}|}{\centering CPI} \\
+\hline
+2013	& & \\
+\hline
+2014	& & \\
+\hline
+2015	& & \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{3cm}
+  
+4. What is the inflation rate for 2013 to 2014 using the GDP Deflator?  Using the CPI? \vspace{3cm}
+  
+5. What is the inflation rate for 2014 to 2015 using the GDP Deflator?  Using the CPI? \vspace{3cm}
+  
+6. 2LT pay in 1980 was \$566.10 and in 2008 it was \$2,469.30. The CPI in 1980 was 41.8 and in 2008 it was 216.6.
+
+    a.	Calculate 1980 and 2008 2LT Pay in 2008 dollars. \vspace{3cm}
+    b.	Calculate 1980 and 2008 2LT Pay in 1980 dollars.  \vspace{3cm}
+    c.	Which pay is higher in real terms?  \vspace{3cm}
+
+\pagebreak
 
 # Long Run Economic Growth {#sec:bluf}
 There are many ways and pathways which economies grow. Economic growth leads to higher standards of living, but a large economy does not always imply the nation is best off. Real GDP is a measure that economists use to measure the “welfare” of the larger economy.
