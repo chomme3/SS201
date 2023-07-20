@@ -76,6 +76,8 @@ library(kableExtra)
 \end{center}
 \fancyfoot[C]{\thepage}
 
+
+
 # Review {#sec:review}
 \begin{center}
 \resizebox{0.95\textwidth}{!}{
@@ -104,69 +106,239 @@ Q &
 }
 \end{center}
 \vspace{0.5cm}
-1. What is the value of P?
- 	  a. 	$100
- 	  b. 	$120
- 	  c. 	$140
- 	  d. 	$160
+1. What is the value of B?
+ 	  a. 	$25
+ 	  b. 	$50
+ 	  c. 	$100
+ 	  d. 	$200
 \vspace{0.5cm}
-2. What is the value of M?
- 	  a. 	$380
- 	  b. 	$350
- 	  c. 	$410
- 	  d. 	$390
-\vspace{0.5cm}
-3. What is the value of O?
- 	  a. 	$200
+2. What is the value of G?
+ 	  a. 	$150
  	  b. 	$300
- 	  c. 	$370
- 	  d. 	$360
+ 	  c. 	$270
+ 	  d. 	$200
 \vspace{0.5cm}
-4. Parker says that the present value of \$350 to be received one year from today if the interest rate is 6 percent is less than the present value of \$350 to be received two years from today if the interest rate is 3 percent. Ryan says that \$350 saved for one year at 6 percent interest has a smaller future value than \$350 saved for two years at 3 percent interest.
- 	a. 	Both Parker and Ryan are correct.
- 	b. 	Both Parker and Ryan are incorrect.
- 	c. 	Only Parker is correct.
- 	d. 	Only Ryan is correct.
+3. What is the value of F?
+ 	  a. 	$75
+ 	  b. 	$100
+ 	  c. 	$125
+ 	  d. 	$150
+\vspace{0.5cm}
+4. Which of the below is not a factor that affects productivity in our National Production function?
+ 	  a. 	Physical Capital
+ 	  b. 	Human Capital
+ 	  c. 	Institutions
+ 	  d. 	Labor
+
 \pagebreak
-5. Suppose that a worker in Cornland can grow either 40 bushels of corn or 10 bushels of oats per year, and a worker in Oatland can grow either 5 bushels of corn or 50 bushels of oats per year. There are 20 workers in Cornland and 20 workers in Oatland. If the two countries do not trade, Cornland will produce and consume 400 bushels of corn and 100 bushels of oats, while Oatland will produce and consume 20 bushels of corn and 800 bushels of oats. If each country made the decision to specialize in producing the good in which it has a comparative advantage, then the combined yearly output of the two countries would increase by
- 	a. 	800 bushels of corn and 100 bushels of oats.
- 	b. 	380 bushels of corn and 100 bushels of oats.
- 	c. 	100 bushels of corn and 380 bushels of oats.
- 	d. 	380 bushels of corn and 1000 bushels of oats.
+Below is a table of Uruguay's national data for the year 2019.
+
+| Category                                        | Amount        |
+|--------------------------------------------------|:---------:|
+| Household purchases of durable goods             | $1,574  |
+| Household purchases of nondurable goods          | $1,717  |
+| Household purchases of services                  | $385    |
+| Household purchases of new housing               | $704    |
+| Purchases of capital equipment                   | $310    |
+| Inventory changes                                | $363    |
+| Purchases of new structures                      | $611    |
+| Depreciation                                     | $117    |
+| Salaries of government workers                   | $1,422  |
+| Government expenditures on public works          | $569    |
+| Transfer payments                                | $777    |
+| Foreign purchases of domestically produced goods | $88     |
+| Domestic purchases of foreign goods              | $140    |
+
+
+5. What was Uruguay's consumption in 2019?
+ 	  a. 	$1,991
+ 	  b. 	$1,988
+ 	  c. 	$3,676
+ 	  d. 	$7,603
 \vspace{0.5cm}
-6. Steak and chicken are substitutes. A sharp reduction in the supply of steak would
- 	a. 	increase consumer surplus in the market for steak and decrease producer surplus in the market for chicken.
- 	b. 	increase consumer surplus in the market for steak and increase producer surplus in the market for chicken.
- 	c. 	decrease consumer surplus in the market for steak and increase producer surplus in the market for chicken.
- 	d. 	decrease consumer surplus in the market for steak and decrease producer surplus in the market for chicken.
+6. In 2002 mortgage rates fell and mortgage lending increased. Which of the following could explain both of these changes?
+ 	  a. 	The demand for loanable funds shifted rightward.
+ 	  b. 	The demand for loanable funds shifted leftward.
+ 	  c. 	The supply of loanable funds shifted rightward.
+ 	  d. 	The supply of loanable funds shifted leftward.
+
 \vspace{0.5cm}
-7. A benefit to society of the patent and copyright laws is that those laws
- 	a. 	help to keep prices down.
- 	b. 	help to prevent a single firm from acquiring ownership of a key resource.
- 	c. 	encourage creative activity.
- 	d. 	discourage the production of inefficient products.
+
+The following table reports nominal and real GDP for the U.S. from 1929 to 1932.
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+Year & 
+\multicolumn{1}{p{3.5cm}|}{\centering Nominal GDP \\ (Billions of Dollars)} & 
+\multicolumn{1}{p{3.5cm}|}{\centering Real GDP \\ (Billions of Dollars)} \\
+\hline
+1929 &	103.6 &	977 \\
+1930 &	91.2 &	892.8 \\
+1931 &	76.5 &	834.9 \\
+1932 &	58.7 &	725.8 \\
+\end{tabular}
+\end{center}
+
+7. What are the GDP deflator and the inflation rate for 1931?
+ 	  a. 	9.16, −11.5
+ 	  b. 	9.16, −10.3
+ 	  c. 	1091.37, 10.3
+ 	  d. 	1091.37, 11.5
+
 \vspace{0.5cm}
-8. Average total cost is increasing whenever
- 	a. 	total cost is increasing.
- 	b. 	marginal cost is increasing.
- 	c. 	marginal cost is less than average total cost.
- 	d. 	marginal cost is greater than average total cost.
+8. Using the midpoint method, the price elasticity of demand for a good is computed to be approximately 0.55. Which of the following events is consistent with a 20 percent decrease in the quantity of the good demanded?
+ 	  a. 	An increase of 11.0 percent in the price of the good
+ 	  b. 	An increase of 36.36 percent in the price of the good
+ 	  c. 	An increase in the price of the good from \$11.00 to \$20
+ 	  d. 	An increase in the price of the good from \$20 to \$31.00
+
 \vspace{0.5cm}
-9. A similarity between monopoly and monopolistic competition is that in both market structures
- 	a. 	there are a small number of sellers.
- 	b. 	strategic interactions among sellers are not important.
- 	c. 	sellers are price makers rather than price takers.
- 	d. 	there are only a few buyers but many sellers.
+9. If long-run average total cost decreases as the quantity of output increases, the firm is experiencing
+ 	  a. 	economies of scale.
+ 	  b. 	diseconomies of scale.
+ 	  c. 	coordination problems arising from the large size of the firm.
+ 	  d. 	fixed costs greatly exceeding variable costs.
+
 \vspace{0.5cm}
-10. Which of the following would shift the supply of umbrellas to the left?
- 	a. 	Rainfall is expected to be unusually low in the coming year.
- 	b. 	The price of an umbrella increases by \$12.
- 	c. 	The cost of the fabric used to make umbrellas decreases.
- 	d. 	The number of firms making umbrellas decreases.
+10. Suppose a certain firm is able to produce 125 units of output per day when 19 workers are hired. The firm is able to produce 137 units of output per day when 20 workers are hired, holding other inputs fixed. The marginal product of the 20th worker is
+ 	  a. 	6 units of output.
+ 	  b. 	7 units of output.
+ 	  c. 	12 units of output.
+ 	  d. 	137 units of output.
 
 \pagebreak
 
-# Labor Markets {#sec:bluf}
+# Capital Markets {#sec:bluf}
+We can model financial markets the same as a market for any other good. We also apply definitions to what saving and investing look like within our macroeconomy, both private and public. Overall, the identity for income and expenditure still must hold. Two important concepts in economics are risk preferences and insurance. With uncertainty about how the future looks, both firms and consumers must make assumptions and assess values for present and future conditions. Ultimately, these assumptions help agents make rational decisions about the future and what best to do in the present.
+
+## Savings Terminology {#sec:savings}
+In economics we make a distinction between savings and investment (and this is different from the way we normally use these terms in business/finance). Savers save and borrowers invest. Putting money into the stock market is SAVING, whereas the company that issued the stock is BORROWING.
+
+1. Define Private Savings.\vspace{3cm}
+
+2. When we say households are "saving" (i.e. private savings increases) what do we mean in practice? What are they actually doing?\vspace{3cm}
+
+3. Name two types of financial intermediaries households actually use when they save?\vspace{3cm}
+
+4. In econ language, what do borrowers borrow money for?\vspace{3cm}
+
+5. How do borrowers "raise" money?\vspace{3cm}
+
+6. Classify the following as a borrower or a saver:
+    a. I put some money into the stock market \vspace{1.0cm}
+    b. I buy a house using a mortgage \vspace{1.0cm}
+    c. Company X becomes public and issues stock \vspace{1.0cm}
+    d. Company Y issues bonds \vspace{1.0cm}
+    e. I put money into a savings account at the bank \vspace{1.0cm}
+    f. I buy a mutual fund \vspace{1.0cm}
+    g. A firm decides to increase its capital, say by buying tractors \vspace{1.0cm}
+
+\pagebreak
+
+## National, Public, and Private Savings {#sec:publicprivsav}
+
+National Savings (S) is defined as the total income in the economy left over after paying for consumption and government purchases. That is $S = Y – C – G$. It is composed of private savings plus public savings. Private savings is the income households have left after paying for taxes and consumption. Public savings is the tax revenue the government has left after paying for its spending (it can be negative = deficit, or positive = surplus, or zero = balanced).
+
+1. Prove that in a closed economy, $S = I$. That is, for the economy as a whole, savings must equal investment. (Hint: recall that $Y = C + I + G + NX$). \vspace{3cm}
+
+2. Prove that National Savings = Private Savings + Public Savings, where private savings is $Y – C – T$ (T is taxes) and public savings is $T - G$. \vspace{3cm}
+
+3. Suppose GDP equals \$10 trillion, consumption equals \$6.5 trillion, the government spends \$2 trillion and has a budget deficit of \$0.3 trillion. The economy is closed. Find public saving, net taxes, private saving, national saving, and investment. \vspace{3cm}
+
+4. In question 1 you proved that $S = I$ for the economy as a whole. (Note that this is obviously not necessarily true for any individual/firm). What mechanism (or price, or rate) in the economy adjusts so that $S = I$? \vspace{3cm}
+
+\pagebreak
+
+## The Market for Loanable Funds (i.e. Capital Markets) {#sec:loanfunds}
+
+For the sake of simplicity, we assume there is just a single financial market in the economy where all borrowers go for the purpose of raising funds for investment and all savers dump their savings. We call this market the market for capital or "the loanable funds market."
+
+1. Draw the market for loanable funds below. Label axes and each curve. Underneath the supply curve, explain who/what makes up the supply curve (word bank: public savings, private savings, private investment). Underneath the demand curve, explain who/what makes up the demand curve (word bank: public savings, private savings, private investment).
+
+```{r g150, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/grid.png")
+``` 
+
+2. For each of the following scenarios, determine which curve shifts (supply or demand), which components of supply (private / public savings) change, if any, and state clearly what happens to the interest rate and to total private investment. It may help to draw a figure.
+    a. There is a new TV show that starts a savings fad. \vspace{2.0cm}
+    b. The government cuts spending (but not taxes). \vspace{2.0cm}
+    c. The government cuts taxes, without altering spending. \vspace{2.0cm}
+    d. The government offers an investment tax credit (you can assume the impact on the government’s budget is minimal). \vspace{2.0cm}
+
+3. What is meant by the “crowding out” effect of government deficits? \vspace{3cm}
+
+\pagebreak
+
+## Risk Preferences / Insurance {#sec:risk}
+
+1. What is “Risk Aversion,” and give an example from Cadet life. \vspace{3cm}
+
+2. Let’s play another game. In economics, we refer to lotteries as random variables over monetary outcomes. For each lottery, you get to pick an option below. What do you play and why? Are you risk-loving, risk-averse, or risk-neutral?  \vspace{0.5cm}
+    
+      Lottery 1: I will either pay you \$50, or I will flip a coin. If heads turns up, I will pay you $100, and if tails turns up, I will pay you nothing. \vspace{0.5cm}
+    
+      Lottery 2: I will either pay you \$50, or I will roll a six-sided die. If it lands on the number three, I will pay you \$300, but if it lands on any other number, I will pay you nothing. \vspace{3.0cm}
+
+3. Given that bad things happen in the world, insurance is a good that people purchase to diversify risk. For example, you all have the opportunity to purchase life insurance policies as a part of Servicemembers’ Group Life Insurance (SGLI) while in service. To be eligible for this benefit, you had to pass certain physical and health standards. For \$500,000 of coverage, I pay roughly \$25 per month for SGLI. For my wife’s civilian policy through Northwestern Mutual, I pay roughly $157 for that same coverage. What are some reasons for why these values differ? \vspace{3cm}
+
+4. Who hits harder? Rugby players or football players? Furthermore, everyone has taken boxing in this class. Would you fight differently if it were bare knuckle and no head-gear versus with head-gear and gloves? What principle to we call this and how does it apply to insurance? \vspace{3cm}
+
+\pagebreak
+
+## Present Value / Future Value {#sec:value}
+
+One of my kids’ favorite games is “Would you rather?” (With a kindergarten and 1st grade lexicon, this loosely translates to “Woodrow rudder?”). To make decisions about how much to save now or what the future value of an investment looks like, we are going to play this game now to calculate both present and future values.
+
+1. Would you rather take \$1,000 today or \$2,000 in 5 years. Assume an average interest rate of 10%. \vspace{3cm}
+
+2. What would the interest rate have to be to make you indifferent between the two options above? \vspace{3cm}
+
+Under the Blended Retirement System (BRS), the Army offers officers with 8-12 years of service a cash bonus called “Continuation Pay,” to get officers to commit to serve for another 3 years. The amount of continuation pay every officer is eligible for depends on the multiplier set by the government (as low as 2.5, but as great as 13) and an officer’s monthly base pay. For example, the current multiplier is 2.5 and an O-4 with 10 years of service (AKA me) earns \$7891.80 in base pay per month; thus, I would be eligible for a \$19,729.80 bonus to serve for 3 more years.
+
+3. What if the Army wanted to know how much they had to pay cadets to get them to commit to 13 years of service upon commissioning? For those wanting to branch aviation, this problem actually hits close to home. Assume that you will commission this May and will face this decision as an O-4 with 10 years of service. Additionally assume that congress will authorize 3% pay raises per year and that you could earn an 8% return over this timeframe. How much would the Army have to pay this graduating class now to commit to 13 years of service? \vspace{3cm}
+
+\pagebreak
+
+## Retirement Savings Application {#sec:retirement}
+
+How much should you save or need for retirement? Great question! Can we make a prediction about that? Of course! Say you retire at age 60 (you cannot access Roth IRA or Thrift Savings Plan until age 59.5 without penalty), you start saving for retirement at age 22, and you are going to live to the ripe old age of 85. How much do you need in present value to have saved for retirement to meet the current budget above? Let’s say inflation averages at 2% over this time period. How much do you need to have saved by age 60 to retire? Let’s assume your budget looks like the following as a married adult with a mortgage, car payments, and an empty-nester.
+
+| Bill                 | Amount       |
+|----------------------|:--------------:|
+| Charity              | $700.00      |
+|                      |              |
+| Mortgage             | $2,000.00    |
+| Car Payments         | $1,000.00    |
+| Insurance            | $200.00      |
+|                      |              |
+| Holidays / Christmas | $200.00      |
+| Life Insurance       | $160.00      |
+| Electricity          | $400.00      |
+| Natural Gas          | $200.00      |
+|                      |              |
+| Internet             | $85.00       |
+| Cell Phone           | $140.00      |
+| Gym Membership       | $130.00      |
+|                      |              |
+| Gas                  | $500.00      |
+| Food                 | $1,000.00    |
+| Entertainment        | $1,000.00    |
+| Clothing             | $100.00      |
+|                      |              |
+| Netflix              | $18.00       |
+| WSJ                  | $4.00        |
+| Spotify              | $16.00       |
+| Apple Cloud Storage  | $1.00        |
+| Audible              | $16.00       |
+|                      |              |
+|                      |              |
+| Monthly Expenses     | $7,870.00    |
+|                      |              |
+| Year Expenses        | $94,440.00   |
+
+\pagebreak
+
+# Labor Markets {#sec:bluf2}
 Unemployment is a significant factor within our economy and this lesson helps define the terms and explain how it is calculated. Important to take away is that there will always be some sort of unemployment and that firms might have an incentive to pay workers more than they are worth. 
 
 ## The Labor Market {#sec:market}
